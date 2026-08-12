@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Miniature Paper Worlds | Printable Shoebox Dioramas & Paper Projects</title>
+  <title>Miniature Paper Worlds | Printable Shoebox Dioramas</title>
 
-  <meta name="description" content="Discover printable shoebox dioramas, nature habitat projects and creative miniature worlds made from paper. Explore the designs, ideas and stories behind Miniature Paper Worlds.">
+  <meta name="description" content="Discover printable shoebox dioramas, nature habitat projects and creative miniature worlds made from paper. Explore Forest Habitat and more printable paper projects.">
 
   <style>
     * {
@@ -34,8 +34,6 @@
       width: min(1120px, 90%);
       margin: 0 auto;
     }
-
-    /* HEADER */
 
     header {
       background: #faf9f5;
@@ -73,29 +71,23 @@
       text-decoration: underline;
     }
 
-    /* HERO */
-
     .hero {
       padding: 110px 0 100px;
-      background:
-        linear-gradient(
-          135deg,
-          #f3f0e6 0%,
-          #faf9f5 60%
-        );
+      background: linear-gradient(135deg, #f3f0e6 0%, #faf9f5 60%);
     }
 
     .hero-content {
       max-width: 850px;
     }
 
-    .eyebrow {
+    .eyebrow,
+    .section-label {
       text-transform: uppercase;
       letter-spacing: .18em;
       font-size: .76rem;
       font-weight: bold;
       color: #687a60;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     h1 {
@@ -129,19 +121,8 @@
       background: #203725;
     }
 
-    /* GENERAL SECTIONS */
-
     section {
       padding: 95px 0;
-    }
-
-    .section-label {
-      text-transform: uppercase;
-      letter-spacing: .16em;
-      font-size: .74rem;
-      font-weight: bold;
-      color: #74806e;
-      margin-bottom: 15px;
     }
 
     h2 {
@@ -151,8 +132,6 @@
       font-weight: normal;
       margin-bottom: 25px;
     }
-
-    /* ABOUT */
 
     .intro-grid {
       display: grid;
@@ -166,16 +145,6 @@
       color: #4f5a52;
     }
 
-    .paper-note {
-      background: #eee9da;
-      padding: 42px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.35rem;
-      line-height: 1.55;
-    }
-
-    /* COLLECTION */
-
     .collection {
       background: #edf0e8;
     }
@@ -185,28 +154,29 @@
       margin-bottom: 55px;
     }
 
+    .collection-heading p {
+      color: #586259;
+    }
+
     .project-card {
       display: grid;
       grid-template-columns: 1.1fr 1fr;
       background: white;
-      min-height: 430px;
+      overflow: hidden;
     }
 
-    .project-placeholder {
-      background:
-        linear-gradient(
-          135deg,
-          #a9bd8c,
-          #456348
-        );
+    .project-image {
       min-height: 430px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: rgba(255,255,255,.85);
-      font-size: .9rem;
-      letter-spacing: .08em;
-      text-transform: uppercase;
+      background: #dfe6d8;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 430px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
     }
 
     .project-content {
@@ -229,13 +199,24 @@
       margin-bottom: 28px;
     }
 
+    .project-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 30px;
+    }
+
+    .project-details span {
+      background: #f2f0e9;
+      padding: 7px 11px;
+      font-size: .78rem;
+    }
+
     .text-link {
       font-weight: bold;
       text-decoration: none;
       border-bottom: 1px solid #304b35;
     }
-
-    /* JOURNAL */
 
     .journal {
       text-align: center;
@@ -248,10 +229,8 @@
 
     .journal p {
       color: #586259;
-      margin-bottom: 28px;
+      margin-bottom: 20px;
     }
-
-    /* CTA */
 
     .cta {
       background: #2e4633;
@@ -278,8 +257,6 @@
       color: #26352b;
     }
 
-    /* FOOTER */
-
     footer {
       padding: 50px 0;
       background: #213226;
@@ -293,8 +270,6 @@
       gap: 30px;
       flex-wrap: wrap;
     }
-
-    /* MOBILE */
 
     @media (max-width: 760px) {
       nav {
@@ -325,12 +300,13 @@
         gap: 40px;
       }
 
-      .project-content {
-        padding: 38px 30px;
+      .project-image,
+      .project-image img {
+        min-height: 300px;
       }
 
-      .project-placeholder {
-        min-height: 300px;
+      .project-content {
+        padding: 38px 30px;
       }
     }
   </style>
@@ -352,14 +328,15 @@
   </div>
 </header>
 
-
 <main>
 
   <section class="hero">
     <div class="container">
       <div class="hero-content">
 
-        <div class="eyebrow">Printable Dioramas & Creative Paper Projects</div>
+        <div class="eyebrow">
+          Printable Dioramas & Creative Paper Projects
+        </div>
 
         <h1>Tiny Worlds.<br>Made From Paper.</h1>
 
@@ -369,18 +346,22 @@
           behind their design.
         </p>
 
-        <a href="#dioramas" class="button">Explore the Dioramas</a>
+        <a href="#dioramas" class="button">
+          Explore the Dioramas
+        </a>
 
       </div>
     </div>
   </section>
 
-
   <section id="about">
     <div class="container intro-grid">
 
       <div>
-        <div class="section-label">Behind Miniature Paper Worlds</div>
+        <div class="section-label">
+          Behind Miniature Paper Worlds
+        </div>
+
         <h2>Hi, I'm Ronald.</h2>
       </div>
 
@@ -411,12 +392,14 @@
     </div>
   </section>
 
-
   <section class="collection" id="dioramas">
     <div class="container">
 
       <div class="collection-heading">
-        <div class="section-label">The Nature Collection</div>
+
+        <div class="section-label">
+          The Nature Collection
+        </div>
 
         <h2>Build a habitat inside a shoebox.</h2>
 
@@ -424,28 +407,44 @@
           Printable nature dioramas designed to turn an ordinary
           shoebox into a colorful miniature ecosystem.
         </p>
-      </div>
 
+      </div>
 
       <article class="project-card">
 
-        <div class="project-placeholder">
-          Forest Habitat Photo
+        <div class="project-image">
+
+          <img
+            src="forest-habitat-shoebox-diorama.jpg"
+            alt="Printable Forest Habitat shoebox diorama for kids with woodland animals, trees and a three-dimensional paper forest scene"
+          >
+
         </div>
 
         <div class="project-content">
 
-          <div class="section-label">Printable Shoebox Diorama</div>
+          <div class="section-label">
+            Printable Shoebox Diorama
+          </div>
 
           <h3>Forest Habitat</h3>
 
           <p>
             Turn an ordinary shoebox into a miniature forest filled
-            with trees, plants and woodland animals. Print, cut,
-            assemble and create your own three-dimensional habitat.
+            with trees, plants and woodland animals. Print, cut and
+            assemble the pieces to create your own three-dimensional
+            forest habitat.
           </p>
 
-          <a href="#" class="text-link">Explore the Forest Habitat →</a>
+          <div class="project-details">
+            <span>17 Full-Color Pages</span>
+            <span>Printable PDF</span>
+            <span>Cut & Create</span>
+          </div>
+
+          <a href="#" class="text-link">
+            Explore the Forest Habitat →
+          </a>
 
         </div>
 
@@ -454,11 +453,12 @@
     </div>
   </section>
 
-
   <section class="journal" id="journal">
     <div class="container journal-inner">
 
-      <div class="section-label">From the Design Journal</div>
+      <div class="section-label">
+        From the Design Journal
+      </div>
 
       <h2>Why build worlds inside shoeboxes?</h2>
 
@@ -469,18 +469,19 @@
       </p>
 
       <p>
-        The Design Journal will follow the experiments, mistakes,
-        solutions and new ideas behind these paper worlds.
+        The Design Journal follows the experiments, ideas, mistakes
+        and solutions behind these miniature paper worlds.
       </p>
 
     </div>
   </section>
 
-
   <section class="cta">
     <div class="container cta-inner">
 
-      <div class="section-label">Start Creating</div>
+      <div class="section-label">
+        Start Creating
+      </div>
 
       <h2>Print. Cut. Create.</h2>
 
@@ -489,13 +490,14 @@
         into your own miniature world.
       </p>
 
-      <a href="#dioramas" class="button">View the Nature Collection</a>
+      <a href="#dioramas" class="button">
+        View the Nature Collection
+      </a>
 
     </div>
   </section>
 
 </main>
-
 
 <footer>
   <div class="container footer-inner">
