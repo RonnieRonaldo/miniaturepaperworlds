@@ -3,11 +3,514 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Miniature Paper Worlds</title>
+
+  <title>Miniature Paper Worlds | Printable Shoebox Dioramas & Paper Projects</title>
+
+  <meta name="description" content="Discover printable shoebox dioramas, nature habitat projects and creative miniature worlds made from paper. Explore the designs, ideas and stories behind Miniature Paper Worlds.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #26352b;
+      background: #faf9f5;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #faf9f5;
+      border-bottom: 1px solid #e3e0d7;
+    }
+
+    nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.45rem;
+      font-weight: bold;
+      text-decoration: none;
+      letter-spacing: .02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: .95rem;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 110px 0 100px;
+      background:
+        linear-gradient(
+          135deg,
+          #f3f0e6 0%,
+          #faf9f5 60%
+        );
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-size: .76rem;
+      font-weight: bold;
+      color: #687a60;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3rem, 7vw, 5.8rem);
+      line-height: 1.02;
+      font-weight: normal;
+      max-width: 900px;
+      margin-bottom: 28px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 660px;
+      color: #566158;
+      margin-bottom: 38px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      background: #304b35;
+      color: white;
+      text-decoration: none;
+      border-radius: 3px;
+      font-weight: bold;
+      font-size: .92rem;
+    }
+
+    .button:hover {
+      background: #203725;
+    }
+
+    /* GENERAL SECTIONS */
+
+    section {
+      padding: 95px 0;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .74rem;
+      font-weight: bold;
+      color: #74806e;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      line-height: 1.15;
+      font-weight: normal;
+      margin-bottom: 25px;
+    }
+
+    /* ABOUT */
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 90px;
+      align-items: start;
+    }
+
+    .intro-text p {
+      margin-bottom: 18px;
+      color: #4f5a52;
+    }
+
+    .paper-note {
+      background: #eee9da;
+      padding: 42px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.35rem;
+      line-height: 1.55;
+    }
+
+    /* COLLECTION */
+
+    .collection {
+      background: #edf0e8;
+    }
+
+    .collection-heading {
+      max-width: 700px;
+      margin-bottom: 55px;
+    }
+
+    .project-card {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      background: white;
+      min-height: 430px;
+    }
+
+    .project-placeholder {
+      background:
+        linear-gradient(
+          135deg,
+          #a9bd8c,
+          #456348
+        );
+      min-height: 430px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,.85);
+      font-size: .9rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .project-content {
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .project-content h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2.2rem;
+      font-weight: normal;
+      margin-bottom: 18px;
+    }
+
+    .project-content p {
+      color: #586259;
+      margin-bottom: 28px;
+    }
+
+    .text-link {
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: 1px solid #304b35;
+    }
+
+    /* JOURNAL */
+
+    .journal {
+      text-align: center;
+    }
+
+    .journal-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .journal p {
+      color: #586259;
+      margin-bottom: 28px;
+    }
+
+    /* CTA */
+
+    .cta {
+      background: #2e4633;
+      color: white;
+      text-align: center;
+    }
+
+    .cta-inner {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .cta .section-label {
+      color: #cbd4c6;
+    }
+
+    .cta p {
+      color: #dce2da;
+      margin-bottom: 30px;
+    }
+
+    .cta .button {
+      background: #f5f1e5;
+      color: #26352b;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 50px 0;
+      background: #213226;
+      color: #cfd7cf;
+      font-size: .88rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 760px) {
+      nav {
+        padding: 22px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .hero {
+        padding: 75px 0;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .intro-grid,
+      .project-card {
+        grid-template-columns: 1fr;
+      }
+
+      .intro-grid {
+        gap: 40px;
+      }
+
+      .project-content {
+        padding: 38px 30px;
+      }
+
+      .project-placeholder {
+        min-height: 300px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Miniature Paper Worlds</h1>
-  <p>Printable shoebox dioramas, miniature worlds and creative paper projects.</p>
-  <p>Website coming soon.</p>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="/" class="logo">Miniature Paper Worlds</a>
+
+      <ul class="nav-links">
+        <li><a href="#dioramas">Shoebox Dioramas</a></li>
+        <li><a href="#journal">Design Journal</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="eyebrow">Printable Dioramas & Creative Paper Projects</div>
+
+        <h1>Tiny Worlds.<br>Made From Paper.</h1>
+
+        <p>
+          Printable shoebox dioramas, miniature habitats and creative
+          paper projects — plus the ideas, experiments and stories
+          behind their design.
+        </p>
+
+        <a href="#dioramas" class="button">Explore the Dioramas</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <div class="container intro-grid">
+
+      <div>
+        <div class="section-label">Behind Miniature Paper Worlds</div>
+        <h2>Hi, I'm Ronald.</h2>
+      </div>
+
+      <div class="intro-text">
+
+        <p>
+          I love creating miniature worlds from paper. What started
+          with simple printable shoebox projects gradually grew into
+          a collection of habitats, dioramas and all kinds of
+          miniature experiments.
+        </p>
+
+        <p>
+          For me, much of the fun is in figuring out how an idea can
+          actually work: researching, measuring, testing, printing,
+          cutting and changing things until a flat sheet of paper
+          becomes a tiny three-dimensional world.
+        </p>
+
+        <p>
+          Miniature Paper Worlds is where I share the finished
+          projects, but also some of the ideas and stories behind
+          their design.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="collection" id="dioramas">
+    <div class="container">
+
+      <div class="collection-heading">
+        <div class="section-label">The Nature Collection</div>
+
+        <h2>Build a habitat inside a shoebox.</h2>
+
+        <p>
+          Printable nature dioramas designed to turn an ordinary
+          shoebox into a colorful miniature ecosystem.
+        </p>
+      </div>
+
+
+      <article class="project-card">
+
+        <div class="project-placeholder">
+          Forest Habitat Photo
+        </div>
+
+        <div class="project-content">
+
+          <div class="section-label">Printable Shoebox Diorama</div>
+
+          <h3>Forest Habitat</h3>
+
+          <p>
+            Turn an ordinary shoebox into a miniature forest filled
+            with trees, plants and woodland animals. Print, cut,
+            assemble and create your own three-dimensional habitat.
+          </p>
+
+          <a href="#" class="text-link">Explore the Forest Habitat →</a>
+
+        </div>
+
+      </article>
+
+    </div>
+  </section>
+
+
+  <section class="journal" id="journal">
+    <div class="container journal-inner">
+
+      <div class="section-label">From the Design Journal</div>
+
+      <h2>Why build worlds inside shoeboxes?</h2>
+
+      <p>
+        Sometimes the most interesting projects begin with ordinary
+        materials. A cardboard box, a few printed pages and an idea
+        can become an entire miniature environment.
+      </p>
+
+      <p>
+        The Design Journal will follow the experiments, mistakes,
+        solutions and new ideas behind these paper worlds.
+      </p>
+
+    </div>
+  </section>
+
+
+  <section class="cta">
+    <div class="container cta-inner">
+
+      <div class="section-label">Start Creating</div>
+
+      <h2>Print. Cut. Create.</h2>
+
+      <p>
+        Explore printable projects and turn simple sheets of paper
+        into your own miniature world.
+      </p>
+
+      <a href="#dioramas" class="button">View the Nature Collection</a>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="container footer-inner">
+
+    <div>
+      <strong>Miniature Paper Worlds</strong><br>
+      Printable dioramas & creative paper projects
+    </div>
+
+    <div>
+      © 2026 Miniature Paper Worlds
+    </div>
+
+  </div>
+</footer>
+
 </body>
 </html>
