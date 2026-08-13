@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rainforest Habitat Shoebox Diorama for Kids | Ecology & STEM Project</title>
+
+  <meta name="description" content="Build a tropical rainforest habitat inside a shoebox with this printable 15-page ecology and biology project for kids. A creative STEM activity for home, school and homeschool.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #26352b;
+      background: #faf9f5;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: #faf9f5;
+      border-bottom: 1px solid #e3e0d7;
+    }
+
+    nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.45rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: .95rem;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .breadcrumb {
+      padding: 25px 0 0;
+      font-size: .84rem;
+      color: #74806e;
+    }
+
+    .breadcrumb a {
+      text-decoration: none;
+    }
+
+    .product-hero {
+      padding: 55px 0 90px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      display: block;
+      border-radius: 3px;
+    }
+
+    .eyebrow,
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-size: .75rem;
+      font-weight: bold;
+      color: #687a60;
+      margin-bottom: 17px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: normal;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 5vw, 4.8rem);
+      line-height: 1.04;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+
+    .lead {
+      font-size: 1.1rem;
+      color: #566158;
+      margin-bottom: 28px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 32px;
+    }
+
+    .tags span {
+      background: #edf0e8;
+      padding: 7px 11px;
+      font-size: .78rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      background: #304b35;
+      color: white;
+      text-decoration: none;
+      border-radius: 3px;
+      font-weight: bold;
+      font-size: .92rem;
+    }
+
+    .button:hover {
+      background: #203725;
+    }
+
+    section {
+      padding: 90px 0;
+    }
+
+    .story {
+      background: #f1eee4;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 80px;
+    }
+
+    .story-text p {
+      margin-bottom: 18px;
+      color: #4f5a52;
+    }
+
+    .uses {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .uses span {
+      background: white;
+      padding: 8px 12px;
+      font-size: .82rem;
+    }
+
+    .process-heading {
+      max-width: 700px;
+      margin-bottom: 50px;
+    }
+
+    .process-heading p {
+      color: #586259;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .process-card {
+      background: white;
+      border: 1px solid #e2e1da;
+      overflow: hidden;
+    }
+
+    .process-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .process-content {
+      padding: 25px;
+    }
+
+    .process-number {
+      font-size: .72rem;
+      font-weight: bold;
+      letter-spacing: .15em;
+      color: #75816f;
+      margin-bottom: 8px;
+    }
+
+    .process-content p {
+      color: #586259;
+      font-size: .93rem;
+    }
+
+    .guide {
+      background: #edf0e8;
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .guide-image img {
+      display: block;
+      width: 100%;
+      max-height: 520px;
+      object-fit: contain;
+      background: white;
+      padding: 15px;
+    }
+
+    .guide-text p {
+      color: #4f5a52;
+      margin-bottom: 18px;
+    }
+
+    .guide-highlight {
+      margin-top: 28px;
+      padding: 22px;
+      background: #faf9f5;
+      border-left: 4px solid #526d50;
+    }
+
+    .video-section {
+      text-align: center;
+    }
+
+    .video-intro {
+      max-width: 680px;
+      margin: 0 auto 40px;
+    }
+
+    .video-intro p {
+      color: #586259;
+    }
+
+    .video-wrapper {
+      width: min(420px, 100%);
+      margin: 0 auto;
+      aspect-ratio: 9 / 16;
+      background: #111;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .included {
+      background: #f1eee4;
+    }
+
+    .included-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    }
+
+    .included-list {
+      list-style: none;
+    }
+
+    .included-list li {
+      padding: 13px 0;
+      border-bottom: 1px solid #d8d4c8;
+    }
+
+    .included-list li::before {
+      content: "✓";
+      margin-right: 12px;
+      font-weight: bold;
+      color: #496348;
+    }
+
+    .need-box {
+      background: white;
+      padding: 40px;
+    }
+
+    .need-box ul {
+      margin: 20px 0 0 20px;
+    }
+
+    .need-box li {
+      margin-bottom: 9px;
+    }
+
+    .learning {
+      text-align: center;
+    }
+
+    .learning-inner {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .learning p {
+      color: #586259;
+      margin-bottom: 18px;
+    }
+
+    .etsy-cta {
+      background: #2e4633;
+      color: white;
+      text-align: center;
+    }
+
+    .etsy-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .etsy-cta .section-label {
+      color: #cbd4c6;
+    }
+
+    .etsy-cta p {
+      color: #dce2da;
+      margin-bottom: 30px;
+    }
+
+    .etsy-cta .button {
+      background: #f5f1e5;
+      color: #26352b;
+    }
+
+    .note {
+      margin-top: 18px;
+      font-size: .82rem;
+      color: #bfc9bd;
+    }
+
+    footer {
+      padding: 50px 0;
+      background: #213226;
+      color: #cfd7cf;
+      font-size: .88rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        padding: 22px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .hero-grid,
+      .story-grid,
+      .guide-grid,
+      .included-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-card img {
+        height: auto;
+        max-height: 350px;
+        object-fit: contain;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .product-hero {
+        padding: 40px 0 65px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo">Miniature Paper Worlds</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#dioramas">Shoebox Dioramas</a></li>
+        <li><a href="index.html#journal">Design Journal</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="container breadcrumb">
+    <a href="index.html">Home</a> &nbsp;›&nbsp;
+    Shoebox Dioramas &nbsp;›&nbsp;
+    Rainforest Habitat
+  </div>
+
+  <section class="product-hero">
+    <div class="container hero-grid">
+
+      <div class="hero-image">
+        <img
+          src="Rainforest Habitat-1.png"
+          alt="Completed printable Rainforest Habitat shoebox diorama for kids with tropical plants, jungle scenery and rainforest animals"
+        >
+      </div>
+
+      <div>
+        <div class="eyebrow">
+          Printable Rainforest STEM Project for Kids
+        </div>
+
+        <h1>Build a Rainforest Habitat Inside a Shoebox</h1>
+
+        <p class="lead">
+          Create a colorful tropical rainforest inside an ordinary shoebox.
+          This hands-on printable project gives kids a fun way to explore
+          rainforest animals, biodiversity, ecology and layered jungle habitats.
+        </p>
+
+        <div class="tags">
+          <span>15 Full-Color Pages</span>
+          <span>Ecology & Biology</span>
+          <span>STEM Activity</span>
+          <span>Printable PDF</span>
+        </div>
+
+        <a
+          class="button"
+          href="https://www.etsy.com/listing/1511634561/printable-ecology-biology-shoebox"
+          target="_blank"
+          rel="noopener"
+        >
+          View the Printable Kit on Etsy
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="container story-grid">
+
+      <div>
+        <div class="section-label">Ideas for Kids</div>
+        <h2>A tropical rainforest project for home or school.</h2>
+      </div>
+
+      <div class="story-text">
+
+        <p>
+          A shoebox can become a surprisingly rich little learning space.
+          With this Rainforest Habitat project, kids can build a dense jungle
+          scene while discovering how animals, plants and different layers of
+          vegetation all form part of one ecosystem.
+        </p>
+
+        <p>
+          It works well as a creative afternoon activity at home, a classroom
+          ecology or biology project, a homeschool lesson, or a hands-on STEM
+          activity about habitats and biodiversity.
+        </p>
+
+        <p>
+          Instead of only reading about tropical rainforests, children can
+          physically build one. Cutting, arranging and layering the printed
+          pieces helps make the idea of an ecosystem more visual and concrete.
+        </p>
+
+        <p>
+          Once the diorama is finished, it can also be used for storytelling,
+          a school presentation, photography or a simple stop-motion movie.
+          Kids can add extra drawings, handmade plants or other natural details
+          to make the jungle their own.
+        </p>
+
+        <div class="uses">
+          <span>Ecology Project</span>
+          <span>Biology Activity</span>
+          <span>STEM Learning</span>
+          <span>Homeschool</span>
+          <span>School Display</span>
+          <span>Stop Motion</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <div class="process-heading">
+        <div class="section-label">How It Works</div>
+        <h2>Print. Cut. Create.</h2>
+
+        <p>
+          Print the pages, cut out the rainforest scenery and animals,
+          and build the habitat layer by layer inside an empty shoebox.
+        </p>
+      </div>
+
+      <div class="process-grid">
+
+        <article class="process-card">
+          <img
+            src="Rainforest Habitat-2.png"
+            alt="Printable tropical rainforest background page for a children's shoebox ecology project"
+          >
+          <div class="process-content">
+            <div class="process-number">STEP 01</div>
+            <h3>Print</h3>
+            <p>
+              Print the colorful jungle backgrounds, plants and habitat
+              pieces included in the digital PDF.
+            </p>
+          </div>
+        </article>
+
+        <article class="process-card">
+          <img
+            src="Rainforest Habitat-3.png"
+            alt="Printable rainforest animal and jungle cutouts for a children's habitat diorama"
+          >
+          <div class="process-content">
+            <div class="process-number">STEP 02</div>
+            <h3>Cut</h3>
+            <p>
+              Cut out the rainforest animals, plants and scenery ready
+              to arrange inside the shoebox.
+            </p>
+          </div>
+        </article>
+
+        <article class="process-card">
+          <img
+            src="Rainforest Habitat-1.png"
+            alt="Finished three-dimensional tropical rainforest habitat paper craft built inside a shoebox"
+          >
+          <div class="process-content">
+            <div class="process-number">STEP 03</div>
+            <h3>Create</h3>
+            <p>
+              Build up the different layers and watch the printed pages
+              become a miniature tropical rainforest.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="guide">
+    <div class="container guide-grid">
+
+      <div class="guide-image">
+        <img
+          src="Rainforest Habitat-4.png"
+          alt="Rainforest shoebox diorama printable page with visual shoebox placement icon and arrow guide"
+        >
+      </div>
+
+      <div class="guide-text">
+
+        <div class="section-label">Easy Visual Instructions</div>
+
+        <h2>Clear placement guides make building easier.</h2>
+
+        <p>
+          Just like the other projects in the shoebox diorama collection,
+          selected Rainforest Habitat pages use a simple visual placement system.
+        </p>
+
+        <p>
+          A small shoebox illustration and arrow show where a background or
+          cut-out element is intended to be placed. Kids can quickly understand
+          the next step without having to work through long written instructions.
+        </p>
+
+        <div class="guide-highlight">
+          <strong>Look for the shoebox + arrow symbol.</strong><br>
+          It gives a quick visual clue for positioning scenery and cut-out pieces.
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="container">
+
+      <div class="video-intro">
+        <div class="section-label">Watch the Project</div>
+        <h2>Take a look inside the Rainforest Habitat.</h2>
+        <p>
+          See how the layered printable pieces turn an ordinary shoebox
+          into a colorful tropical jungle scene.
+        </p>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/WSnH-HX8DQE"
+          title="Rainforest Habitat Printable Shoebox Diorama for Kids"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="included">
+    <div class="container included-grid">
+
+      <div>
+        <div class="section-label">The Printable Project</div>
+        <h2>What's included?</h2>
+
+        <ul class="included-list">
+          <li>15 full-color printable pages</li>
+          <li>Tropical rainforest backgrounds and scenery</li>
+          <li>Rainforest animal cut-outs</li>
+          <li>Layered elements for building a 3D jungle habitat</li>
+          <li>Clear visual placement guides</li>
+          <li>Digital PDF download</li>
+          <li>Designed for US Letter size paper</li>
+        </ul>
+      </div>
+
+      <div class="need-box">
+        <div class="section-label">Before You Start</div>
+        <h3>What do you need?</h3>
+
+        <ul>
+          <li>One empty shoebox</li>
+          <li>A printer</li>
+          <li>Scissors</li>
+          <li>Glue and/or tape</li>
+        </ul>
+
+        <p style="margin-top:25px; color:#586259;">
+          The shoebox is not included. The printable design works best with
+          a typical shoebox that originally held approximately US shoe sizes
+          8.5–10 (UK 6–7.5). Small size differences can easily be adjusted
+          with an extra piece of paper, pencil or marker.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="learning">
+    <div class="container learning-inner">
+
+      <div class="section-label">Explore the Ecosystem</div>
+      <h2>Why are rainforests so full of life?</h2>
+
+      <p>
+        Tropical rainforests are a great starting point for talking with kids
+        about biodiversity. Many different plants and animals live together
+        within a relatively small area, each depending on the habitat around them.
+      </p>
+
+      <p>
+        While building the diorama, children can talk about why rainforest
+        vegetation is so dense, where different animals might live, and how
+        plants provide food, shelter and hiding places.
+      </p>
+
+      <p>
+        The completed shoebox can then become part of a classroom presentation,
+        a biology discussion, a storytelling activity or simply a colorful
+        miniature world to keep and enjoy.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="etsy-cta">
+    <div class="container etsy-inner">
+
+      <div class="section-label">Want to Make This Project?</div>
+      <h2>Build your own Rainforest Habitat.</h2>
+
+      <p>
+        If this looks like a fun ecology, biology or creative project for
+        home or school, the complete 15-page printable Rainforest Habitat
+        kit is available as a digital download from my Etsy shop.
+      </p>
+
+      <a
+        class="button"
+        href="https://www.etsy.com/listing/1511634561/printable-ecology-biology-shoebox"
+        target="_blank"
+        rel="noopener"
+      >
+        View the Rainforest Habitat on Etsy
+      </a>
+
+      <div class="note">
+        Digital download only. Shoebox and craft materials are not included.
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <strong>Miniature Paper Worlds</strong><br>
+      Printable dioramas & creative paper projects
+    </div>
+
+    <div>
+      © 2026 Miniature Paper Worlds
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
