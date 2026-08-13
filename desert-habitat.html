@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Desert Habitat Shoebox Diorama for Kids | Camel & Geography Project</title>
+  <meta name="description" content="Build a desert habitat inside a shoebox with this printable 13-page project for kids featuring camels, Bedouin tents, desert animals, cacti and sand dunes. Ideal for school, geography, science and homeschool activities.">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, Helvetica, sans-serif; color: #26352b; background: #faf9f5; line-height: 1.7; }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    .container { width: min(1120px, 90%); margin: 0 auto; }
+
+    header { background: #faf9f5; border-bottom: 1px solid #e3e0d7; }
+    nav { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .logo { font-family: Georgia, "Times New Roman", serif; font-size: 1.45rem; font-weight: bold; text-decoration: none; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { text-decoration: none; font-size: .95rem; }
+    .nav-links a:hover { text-decoration: underline; }
+
+    .breadcrumb { padding: 25px 0 0; font-size: .84rem; color: #74806e; }
+    .breadcrumb a { text-decoration: none; }
+
+    section { padding: 90px 0; }
+    .product-hero { padding: 55px 0 90px; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 70px; align-items: center; }
+    .hero-image img { width: 100%; display: block; border-radius: 3px; }
+
+    .eyebrow, .section-label {
+      text-transform: uppercase; letter-spacing: .18em; font-size: .75rem;
+      font-weight: bold; color: #687a60; margin-bottom: 17px;
+    }
+
+    h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: normal; }
+    h1 { font-size: clamp(2.8rem, 5vw, 4.8rem); line-height: 1.04; margin-bottom: 25px; }
+    h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1.15; margin-bottom: 24px; }
+    h3 { font-size: 1.6rem; margin-bottom: 12px; }
+
+    .lead { font-size: 1.1rem; color: #566158; margin-bottom: 28px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 32px; }
+    .tags span { background: #edf0e8; padding: 7px 11px; font-size: .78rem; }
+
+    .button {
+      display: inline-block; padding: 14px 24px; background: #304b35; color: white;
+      text-decoration: none; border-radius: 3px; font-weight: bold; font-size: .92rem;
+    }
+    .button:hover { background: #203725; }
+
+    .story { background: #f1eee4; }
+    .story-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; }
+    .story-text p { margin-bottom: 18px; color: #4f5a52; }
+    .uses { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .uses span { background: white; padding: 8px 12px; font-size: .82rem; }
+
+    .views-heading, .process-heading, .details-heading { max-width: 720px; margin-bottom: 45px; }
+    .views-heading p, .process-heading p, .details-heading p { color: #586259; }
+
+    .three-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+    .image-card { background: white; border: 1px solid #e2e1da; overflow: hidden; }
+    .image-card img { width: 100%; height: 250px; object-fit: cover; display: block; }
+    .image-card-content { padding: 22px; }
+    .image-card-content p { color: #586259; font-size: .92rem; }
+
+    .process { background: #edf0e8; }
+    .process-card { background: white; overflow: hidden; }
+    .process-card img { width: 100%; height: 240px; object-fit: cover; display: block; }
+    .process-content { padding: 25px; }
+    .process-number { font-size: .72rem; font-weight: bold; letter-spacing: .15em; color: #75816f; margin-bottom: 8px; }
+    .process-content p { color: #586259; font-size: .93rem; }
+
+    .details-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .details-gallery img { width: 100%; height: 300px; object-fit: cover; display: block; }
+
+    .guide { background: #f1eee4; }
+    .guide-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+    .guide-image img { display: block; width: 100%; max-height: 520px; object-fit: contain; background: white; padding: 15px; }
+    .guide-text p { color: #4f5a52; margin-bottom: 18px; }
+    .guide-highlight { margin-top: 28px; padding: 22px; background: #faf9f5; border-left: 4px solid #526d50; }
+
+    .video-section { text-align: center; }
+    .video-intro { max-width: 680px; margin: 0 auto 40px; }
+    .video-intro p { color: #586259; }
+    .video-wrapper { width: min(420px, 100%); margin: 0 auto; aspect-ratio: 9 / 16; background: #111; }
+    .video-wrapper iframe { width: 100%; height: 100%; border: 0; }
+
+    .included { background: #edf0e8; }
+    .included-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+    .included-list { list-style: none; }
+    .included-list li { padding: 13px 0; border-bottom: 1px solid #d8d4c8; }
+    .included-list li::before { content: "✓"; margin-right: 12px; font-weight: bold; color: #496348; }
+    .need-box { background: white; padding: 40px; }
+    .need-box ul { margin: 20px 0 0 20px; }
+    .need-box li { margin-bottom: 9px; }
+
+    .learning { text-align: center; }
+    .learning-inner { max-width: 790px; margin: 0 auto; }
+    .learning p { color: #586259; margin-bottom: 18px; }
+
+    .etsy-cta { background: #2e4633; color: white; text-align: center; }
+    .etsy-inner { max-width: 720px; margin: 0 auto; }
+    .etsy-cta .section-label { color: #cbd4c6; }
+    .etsy-cta p { color: #dce2da; margin-bottom: 30px; }
+    .etsy-cta .button { background: #f5f1e5; color: #26352b; }
+    .note { margin-top: 18px; font-size: .82rem; color: #bfc9bd; }
+
+    footer { padding: 50px 0; background: #213226; color: #cfd7cf; font-size: .88rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
+
+    @media (max-width: 760px) {
+      nav { padding: 22px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { gap: 15px; flex-wrap: wrap; }
+      .hero-grid, .story-grid, .guide-grid, .included-grid { grid-template-columns: 1fr; gap: 40px; }
+      .three-grid, .details-gallery { grid-template-columns: 1fr; }
+      .image-card img, .process-card img, .details-gallery img { height: auto; max-height: 380px; object-fit: contain; }
+      section { padding: 65px 0; }
+      .product-hero { padding: 40px 0 65px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo">Miniature Paper Worlds</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#dioramas">Shoebox Dioramas</a></li>
+        <li><a href="index.html#journal">Design Journal</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="container breadcrumb">
+    <a href="index.html">Home</a> &nbsp;›&nbsp; Shoebox Dioramas &nbsp;›&nbsp; Desert Habitat
+  </div>
+
+  <section class="product-hero">
+    <div class="container hero-grid">
+      <div class="hero-image">
+        <img src="Desert-habitat-shoebox-diorama-1.jpg" alt="Completed printable Desert Habitat shoebox diorama for kids with camels, desert scenery, tents and sand dunes">
+      </div>
+
+      <div>
+        <div class="eyebrow">Printable Desert Project for Kids</div>
+        <h1>Build a Desert Habitat Inside a Shoebox</h1>
+        <p class="lead">
+          Create a colorful miniature desert with camels, tents, desert animals,
+          plants, sand dunes and rocky scenery. A hands-on printable project for
+          exploring desert habitats, geography and life in dry environments.
+        </p>
+
+        <div class="tags">
+          <span>13 Full-Color Pages</span>
+          <span>Desert Habitat</span>
+          <span>Geography Project</span>
+          <span>Printable PDF</span>
+        </div>
+
+        <a class="button" href="https://www.etsy.com/listing/4517165666/desert-shoebox-diorama-printable-pdf" target="_blank" rel="noopener">
+          View the Printable Kit on Etsy
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="container story-grid">
+      <div>
+        <div class="section-label">Ideas for Kids</div>
+        <h2>Explore desert life through a miniature world.</h2>
+      </div>
+
+      <div class="story-text">
+        <p>
+          Deserts offer a completely different environment to explore. With open
+          sandy landscapes, scarce water, specialized plants and animals, they
+          make a fascinating subject for a school geography or habitat project.
+        </p>
+        <p>
+          Kids can build their own desert scene with camels and camel caravans,
+          traditional Bedouin-style tents, desert animals, cacti, plants, dunes
+          and rocky formations.
+        </p>
+        <p>
+          The project works well for classroom activities, homeschool lessons,
+          geography studies, science units, habitat studies or simply a creative
+          afternoon at home.
+        </p>
+        <p>
+          Once finished, the shoebox can also become a backdrop for storytelling,
+          imaginative play, photography or a simple stop-motion film.
+        </p>
+
+        <div class="uses">
+          <span>Geography</span><span>School Project</span><span>Homeschool</span>
+          <span>Habitat Study</span><span>Science Activity</span><span>Stop Motion</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="views-heading">
+        <div class="section-label">Explore the Diorama</div>
+        <h2>See the desert world from different angles.</h2>
+        <p>
+          Looking from above and from both sides shows how the flat printed
+          pieces work together to create depth inside the shoebox.
+        </p>
+      </div>
+
+      <div class="three-grid">
+        <article class="image-card">
+          <img src="Desert-habitat-shoebox-diorama-2.jpg" alt="Top view of a printable Desert Habitat shoebox diorama showing the layered desert scene">
+          <div class="image-card-content"><h3>Top View</h3><p>See how the scenery and cut-outs are arranged across the shoebox floor.</p></div>
+        </article>
+
+        <article class="image-card">
+          <img src="Desert-habitat-shoebox-diorama-3.jpg" alt="Left side view of a printable Desert Habitat shoebox diorama for kids">
+          <div class="image-card-content"><h3>Left View</h3><p>A closer look at the layers that give the paper desert its three-dimensional feel.</p></div>
+        </article>
+
+        <article class="image-card">
+          <img src="Desert-habitat-shoebox-diorama-4.jpg" alt="Right side view of a printable Desert Habitat shoebox diorama with desert scenery">
+          <div class="image-card-content"><h3>Right View</h3><p>Another angle on the miniature landscape, animals and desert details.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="container">
+      <div class="process-heading">
+        <div class="section-label">How It Works</div>
+        <h2>Print. Cut. Create.</h2>
+        <p>
+          The project starts as printed pages and ends as a colorful
+          three-dimensional desert scene inside an ordinary shoebox.
+        </p>
+      </div>
+
+      <div class="three-grid">
+        <article class="process-card">
+          <img src="Desert-habitat-shoebox-diorama-8.jpg" alt="Printed Desert Habitat PDF pages laid out on a table ready for a children's craft project">
+          <div class="process-content">
+            <div class="process-number">STEP 01</div><h3>Print</h3>
+            <p>Print the 13 full-color pages with backgrounds, animals, plants and desert scenery.</p>
+          </div>
+        </article>
+
+        <article class="process-card">
+          <img src="Desert-habitat-shoebox-diorama-9.jpg" alt="Close-up of printed Desert Habitat PDF craft pages showing illustrated pieces ready to cut out">
+          <div class="process-content">
+            <div class="process-number">STEP 02</div><h3>Cut</h3>
+            <p>Cut out the illustrated pieces and prepare the backgrounds and scenery for assembly.</p>
+          </div>
+        </article>
+
+        <article class="process-card">
+          <img src="Desert-habitat-shoebox-diorama-1.jpg" alt="Finished Desert Habitat shoebox diorama showing the completed printable paper craft">
+          <div class="process-content">
+            <div class="process-number">STEP 03</div><h3>Create</h3>
+            <p>Arrange and glue the pieces inside the box to build your own miniature desert habitat.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="details-heading">
+        <div class="section-label">Look Closer</div>
+        <h2>Small details bring the desert to life.</h2>
+        <p>
+          Camels, tents, plants and landscape details turn the printed scene
+          into a miniature world kids can explore from close up.
+        </p>
+      </div>
+
+      <div class="details-gallery">
+        <img src="Desert-habitat-shoebox-diorama-5.jpg" alt="Close-up detail of camels and desert scenery in a printable shoebox diorama">
+        <img src="Desert-habitat-shoebox-diorama-6.jpg" alt="Close-up detail of a tent, plants and desert habitat scenery in a shoebox craft">
+        <img src="Desert-habitat-shoebox-diorama-7.jpg" alt="Close-up of layered desert animals and landscape details in a printable paper diorama">
+      </div>
+    </div>
+  </section>
+
+  <section class="guide">
+    <div class="container guide-grid">
+      <div class="guide-image">
+        <img src="Desert-habitat-shoebox-diorama-9.jpg" alt="Close-up of printed Desert Habitat PDF pages showing the craft pieces and visual layout">
+      </div>
+
+      <div class="guide-text">
+        <div class="section-label">Easy to Follow</div>
+        <h2>From printed page to miniature desert.</h2>
+        <p>
+          The illustrated pages are designed to make the project visual and
+          approachable. Kids can see the scenery and individual elements before
+          cutting them out and deciding where they belong in the shoebox.
+        </p>
+        <p>
+          The process is deliberately simple: print, cut, arrange and glue.
+          That makes it suitable for a creative home activity as well as a
+          classroom or homeschool project.
+        </p>
+
+        <div class="guide-highlight">
+          <strong>Simple materials, lots of possibilities.</strong><br>
+          Start with a shoebox, scissors and glue or tape, then add your own
+          drawings or craft materials if you want to expand the desert world.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="container">
+      <div class="video-intro">
+        <div class="section-label">Watch the Project</div>
+        <h2>Take a closer look at the Desert Habitat.</h2>
+        <p>See how the printable pieces come together inside the shoebox to form the finished desert scene.</p>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/pS7iMCW8AZM"
+          title="Desert Habitat Printable Shoebox Diorama for Kids"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="included">
+    <div class="container included-grid">
+      <div>
+        <div class="section-label">The Printable Project</div>
+        <h2>What's included?</h2>
+        <ul class="included-list">
+          <li>13 full-color printable pages</li>
+          <li>Large panoramic desert background</li>
+          <li>Camels and camel caravan elements</li>
+          <li>Traditional Bedouin-style tents</li>
+          <li>Desert animals</li>
+          <li>Cacti and desert plants</li>
+          <li>Sand dunes and rocky desert formations</li>
+          <li>Digital PDF in US Letter size</li>
+        </ul>
+      </div>
+
+      <div class="need-box">
+        <div class="section-label">Before You Start</div>
+        <h3>What do you need?</h3>
+        <ul>
+          <li>One empty shoebox</li>
+          <li>A printer</li>
+          <li>Scissors</li>
+          <li>Glue and/or tape</li>
+        </ul>
+
+        <p style="margin-top:25px; color:#586259;">
+          The shoebox is not included. The ideal fit is a typical shoebox
+          approximately 8.5–10 inches long (roughly UK shoe size 6–7.5).
+          A slightly larger or smaller box can be adjusted with scissors,
+          a marker or a little extra craft material.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="learning">
+    <div class="container learning-inner">
+      <div class="section-label">Explore the Desert</div>
+      <h2>How does life adapt to a dry environment?</h2>
+      <p>
+        Desert habitats receive very little rainfall, so plants, animals and
+        people have to deal with heat, dryness and limited water. That makes a
+        desert diorama a useful starting point for conversations about climate,
+        geography and adaptation.
+      </p>
+      <p>
+        Kids can think about why camels are so well suited to dry landscapes,
+        how desert plants cope with scarce water, where animals find shelter,
+        and how people travel and live in arid regions.
+      </p>
+      <p>
+        The finished model can support a geography lesson, animal habitat study,
+        classroom presentation or science project while still being a fun
+        creative build in its own right.
+      </p>
+    </div>
+  </section>
+
+  <section class="etsy-cta">
+    <div class="container etsy-inner">
+      <div class="section-label">Want to Make This Project?</div>
+      <h2>Build your own Desert Habitat.</h2>
+      <p>
+        If you need a desert habitat, camel or geography project for a child,
+        the complete 13-page printable Desert Shoebox Diorama is available
+        as a digital download from my Etsy shop.
+      </p>
+
+      <a class="button" href="https://www.etsy.com/listing/4517165666/desert-shoebox-diorama-printable-pdf" target="_blank" rel="noopener">
+        View the Desert Habitat on Etsy
+      </a>
+
+      <div class="note">Digital download only. Shoebox and craft materials are not included.</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div><strong>Miniature Paper Worlds</strong><br>Printable dioramas & creative paper projects</div>
+    <div>© 2026 Miniature Paper Worlds</div>
+  </div>
+</footer>
+
+</body>
+</html>
