@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Arctic Habitat Shoebox Diorama for Kids | Polar Bear School Project</title>
+  <meta name="description" content="Build an Arctic habitat inside a shoebox with this printable 14-page project for kids featuring polar bears, walrus, seals, snowy owl, orca, reindeer and narwhal. Includes A4 and US Letter PDFs.">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, Helvetica, sans-serif; color: #26352b; background: #faf9f5; line-height: 1.7; }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    .container { width: min(1120px, 90%); margin: 0 auto; }
+
+    header { background: #faf9f5; border-bottom: 1px solid #e3e0d7; }
+    nav { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .logo { font-family: Georgia, "Times New Roman", serif; font-size: 1.45rem; font-weight: bold; text-decoration: none; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { text-decoration: none; font-size: .95rem; }
+    .nav-links a:hover { text-decoration: underline; }
+
+    .breadcrumb { padding: 25px 0 0; font-size: .84rem; color: #74806e; }
+    .breadcrumb a { text-decoration: none; }
+
+    section { padding: 90px 0; }
+    .product-hero { padding: 55px 0 90px; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 70px; align-items: center; }
+    .hero-image img { width: 100%; display: block; border-radius: 3px; }
+
+    .eyebrow, .section-label {
+      text-transform: uppercase; letter-spacing: .18em; font-size: .75rem;
+      font-weight: bold; color: #687a60; margin-bottom: 17px;
+    }
+
+    h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: normal; }
+    h1 { font-size: clamp(2.8rem, 5vw, 4.8rem); line-height: 1.04; margin-bottom: 25px; }
+    h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1.15; margin-bottom: 24px; }
+    h3 { font-size: 1.55rem; margin-bottom: 12px; }
+
+    .lead { font-size: 1.1rem; color: #566158; margin-bottom: 28px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 32px; }
+    .tags span { background: #edf0e8; padding: 7px 11px; font-size: .78rem; }
+
+    .button {
+      display: inline-block; padding: 14px 24px; background: #304b35; color: white;
+      text-decoration: none; border-radius: 3px; font-weight: bold; font-size: .92rem;
+    }
+    .button:hover { background: #203725; }
+
+    .story { background: #f1eee4; }
+    .story-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; }
+    .story-text p { margin-bottom: 18px; color: #4f5a52; }
+    .uses { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .uses span { background: white; padding: 8px 12px; font-size: .82rem; }
+
+    .animals { background: #edf0e8; }
+    .animals-heading { max-width: 760px; margin-bottom: 42px; }
+    .animals-heading p { color: #586259; }
+    .animal-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .animal-card { background: white; padding: 25px 20px; min-height: 130px; }
+    .animal-card strong { display: block; font-family: Georgia, "Times New Roman", serif; font-size: 1.15rem; margin-bottom: 6px; font-weight: normal; }
+    .animal-card span { color: #657068; font-size: .88rem; }
+
+    .making-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; align-items: center; }
+    .making-image img { width: 100%; display: block; max-height: 500px; object-fit: contain; background: white; }
+    .making-text p { color: #586259; margin-bottom: 18px; }
+    .steps { margin-top: 28px; }
+    .step { padding: 16px 0; border-bottom: 1px solid #deddd6; }
+    .step strong { margin-right: 12px; color: #4e674d; }
+
+    .small-gallery { background: #f1eee4; }
+    .small-gallery-heading { max-width: 720px; margin-bottom: 40px; }
+    .small-gallery-heading p { color: #586259; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .gallery-card { background: #faf9f5; padding: 12px; }
+    .gallery-card img { width: 100%; height: 220px; object-fit: contain; display: block; }
+    .gallery-card p { padding: 12px 5px 4px; font-size: .86rem; color: #667068; }
+
+    .closeup-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 65px; align-items: center; }
+    .closeup-grid img { width: 100%; max-height: 520px; object-fit: contain; display: block; }
+    .closeup-text p { color: #586259; margin-bottom: 18px; }
+
+    .video-section { text-align: center; background: #edf0e8; }
+    .video-intro { max-width: 680px; margin: 0 auto 40px; }
+    .video-intro p { color: #586259; }
+    .video-wrapper { width: min(420px, 100%); margin: 0 auto; aspect-ratio: 9 / 16; background: #111; }
+    .video-wrapper iframe { width: 100%; height: 100%; border: 0; }
+
+    .included-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+    .included-list { list-style: none; }
+    .included-list li { padding: 13px 0; border-bottom: 1px solid #d8d4c8; }
+    .included-list li::before { content: "✓"; margin-right: 12px; font-weight: bold; color: #496348; }
+    .need-box { background: #f1eee4; padding: 40px; }
+    .need-box ul { margin: 20px 0 0 20px; }
+    .need-box li { margin-bottom: 9px; }
+
+    .learning { text-align: center; background: #f1eee4; }
+    .learning-inner { max-width: 800px; margin: 0 auto; }
+    .learning p { color: #586259; margin-bottom: 18px; }
+
+    .etsy-cta { background: #2e4633; color: white; text-align: center; }
+    .etsy-inner { max-width: 720px; margin: 0 auto; }
+    .etsy-cta .section-label { color: #cbd4c6; }
+    .etsy-cta p { color: #dce2da; margin-bottom: 30px; }
+    .etsy-cta .button { background: #f5f1e5; color: #26352b; }
+    .note { margin-top: 18px; font-size: .82rem; color: #bfc9bd; }
+
+    footer { padding: 50px 0; background: #213226; color: #cfd7cf; font-size: .88rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
+
+    @media (max-width: 850px) {
+      .animal-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 760px) {
+      nav { padding: 22px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { gap: 15px; flex-wrap: wrap; }
+      .hero-grid, .story-grid, .making-grid, .closeup-grid, .included-grid { grid-template-columns: 1fr; gap: 40px; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-card img { height: auto; max-height: 330px; }
+      section { padding: 65px 0; }
+      .product-hero { padding: 40px 0 65px; }
+    }
+
+    @media (max-width: 480px) {
+      .animal-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo">Miniature Paper Worlds</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#dioramas">Shoebox Dioramas</a></li>
+        <li><a href="index.html#journal">Design Journal</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="container breadcrumb">
+    <a href="index.html">Home</a> &nbsp;›&nbsp; Shoebox Dioramas &nbsp;›&nbsp; Arctic Habitat
+  </div>
+
+  <section class="product-hero">
+    <div class="container hero-grid">
+      <div class="hero-image">
+        <img src="Polar-habitat-shoebox-diorama-1.jpg" alt="Completed printable Arctic Habitat shoebox diorama for kids with polar bears and North Pole animals">
+      </div>
+
+      <div>
+        <div class="eyebrow">Printable Arctic Project for Kids</div>
+        <h1>Build an Arctic Habitat Inside a Shoebox</h1>
+        <p class="lead">
+          Create an icy miniature world with polar bears, a walrus, seal, snowy owl,
+          orca, reindeer and narwhal. A printable North Pole project for exploring
+          Arctic animals, cold habitats and life in a frozen environment.
+        </p>
+
+        <div class="tags">
+          <span>14 Pages</span>
+          <span>A4 + US Letter</span>
+          <span>Arctic Animals</span>
+          <span>Printable PDF</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="container story-grid">
+      <div>
+        <div class="section-label">Ideas for Kids</div>
+        <h2>A frozen habitat for school, homeschool or winter crafting.</h2>
+      </div>
+
+      <div class="story-text">
+        <p>
+          The Arctic gives kids a very different habitat to explore: snow, sea ice,
+          freezing water and animals specially adapted to life in the far north.
+        </p>
+        <p>
+          Instead of simply reading about the North Pole, children can print,
+          cut and arrange their own Arctic scene inside a shoebox. Extra snow
+          layers help create depth and turn the flat pages into a small 3D world.
+        </p>
+        <p>
+          It works as a classroom science activity, animal habitat project,
+          homeschool lesson, winter craft or creative project at home.
+        </p>
+
+        <div class="uses">
+          <span>North Pole</span><span>School Project</span><span>Science Unit</span>
+          <span>Homeschool</span><span>Winter Craft</span><span>Animal Habitats</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="animals">
+    <div class="container">
+      <div class="animals-heading">
+        <div class="section-label">Meet the Arctic Animals</div>
+        <h2>Who lives in this frozen world?</h2>
+        <p>
+          The printable set includes a mix of land and marine animals associated
+          with Arctic and northern environments, giving kids several different
+          kinds of wildlife to place in their habitat.
+        </p>
+      </div>
+
+      <div class="animal-grid">
+        <div class="animal-card"><strong>Polar Bear & Cub</strong><span>Iconic Arctic predators built for cold conditions.</span></div>
+        <div class="animal-card"><strong>Walrus</strong><span>A large marine mammal associated with icy northern seas.</span></div>
+        <div class="animal-card"><strong>Seal</strong><span>At home around cold ocean water and sea ice.</span></div>
+        <div class="animal-card"><strong>Snowy Owl</strong><span>A northern bird with pale plumage suited to snowy landscapes.</span></div>
+        <div class="animal-card"><strong>Orca</strong><span>A powerful marine predator found in cold northern waters.</span></div>
+        <div class="animal-card"><strong>Reindeer</strong><span>A land animal adapted to cold northern regions.</span></div>
+        <div class="animal-card"><strong>Narwhal</strong><span>A distinctive Arctic whale known for its long tusk.</span></div>
+        <div class="animal-card"><strong>Your Arctic Scene</strong><span>Arrange the animals and snow layers to create your own habitat.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container making-grid">
+      <div class="making-image">
+        <img src="Polar-habitat-shoebox-diorama-4.jpg" alt="Printed Arctic Habitat PDF pages laid out on a table ready for a children's shoebox project">
+      </div>
+
+      <div class="making-text">
+        <div class="section-label">How It Works</div>
+        <h2>From printable pages to a frozen miniature world.</h2>
+        <p>
+          The project is deliberately straightforward. Print the pages, cut out
+          the animals and scenery, then arrange the pieces inside an empty shoebox.
+        </p>
+        <p>
+          Layered snow elements help give the finished scene a three-dimensional
+          appearance without requiring complicated model-making materials.
+        </p>
+
+        <div class="steps">
+          <div class="step"><strong>01</strong> Print the Arctic backgrounds, animals and snow layers.</div>
+          <div class="step"><strong>02</strong> Cut out the individual pieces.</div>
+          <div class="step"><strong>03</strong> Arrange, glue and build the habitat inside a shoebox.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="small-gallery">
+    <div class="container">
+      <div class="small-gallery-heading">
+        <div class="section-label">A Closer Look at the Project</div>
+        <h2>Printed, cut and ready to build.</h2>
+        <p>
+          These smaller views show the project materials and construction process
+          without relying on large gallery photography.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="Polar-habitat-shoebox-diorama-5.jpg" alt="Close-up of printed Arctic animal pages from the printable shoebox diorama PDF">
+          <p>Printed animal artwork before cutting.</p>
+        </div>
+
+        <div class="gallery-card">
+          <img src="Polar-habitat-shoebox-diorama-6.jpg" alt="Cut-out Arctic paper animals laid on a table ready for a shoebox diorama">
+          <p>Cut-out animals ready to become part of the scene.</p>
+        </div>
+
+        <div class="gallery-card">
+          <img src="Polar-habitat-shoebox-diorama-7.jpg" alt="Close-up of the completed Arctic Habitat shoebox diorama with layered snow and animals">
+          <p>A closer look at the layered finished habitat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container closeup-grid">
+      <div>
+        <img src="Polar-habitat-shoebox-diorama-7.jpg" alt="Detailed close-up of a completed printable Arctic Habitat shoebox project">
+      </div>
+
+      <div class="closeup-text">
+        <div class="section-label">Build in Layers</div>
+        <h2>Snow, animals and scenery create the depth.</h2>
+        <p>
+          The extra snow pieces are useful because they allow animals to sit at
+          different positions in the box rather than everything being placed
+          against one flat background.
+        </p>
+        <p>
+          Kids can experiment with the arrangement before gluing anything down,
+          deciding which animals belong near the water, on the ice or farther
+          back in the snowy landscape.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="container">
+      <div class="video-intro">
+        <div class="section-label">Watch the Project</div>
+        <h2>See the Arctic Habitat in motion.</h2>
+        <p>
+          The video gives a better look at the finished shoebox, its layers and
+          the animals inside the frozen scene.
+        </p>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/oQq7HweA3mA"
+          title="Arctic Habitat Printable Shoebox Diorama for Kids"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container included-grid">
+      <div>
+        <div class="section-label">The Printable Project</div>
+        <h2>What's included?</h2>
+        <ul class="included-list">
+          <li>14 printable project pages</li>
+          <li>A4 PDF version</li>
+          <li>US Letter PDF version</li>
+          <li>Arctic background scenes</li>
+          <li>Polar bear and cub</li>
+          <li>Walrus, seal and snowy owl</li>
+          <li>Orca, reindeer and narwhal</li>
+          <li>Extra snow layers for a 3D effect</li>
+        </ul>
+      </div>
+
+      <div class="need-box">
+        <div class="section-label">Before You Start</div>
+        <h3>What do you need?</h3>
+        <ul>
+          <li>One empty shoebox</li>
+          <li>A printer</li>
+          <li>Scissors</li>
+          <li>Glue and/or tape</li>
+        </ul>
+        <p style="margin-top:25px; color:#586259;">
+          This is a digital printable project. The physical shoebox and craft
+          materials are not included.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="learning">
+    <div class="container learning-inner">
+      <div class="section-label">Explore the Arctic</div>
+      <h2>How do animals survive such extreme cold?</h2>
+      <p>
+        An Arctic habitat project can lead naturally into questions about
+        insulation, sea ice, food, shelter and the different ways animals cope
+        with freezing temperatures.
+      </p>
+      <p>
+        Kids can compare animals that spend much of their time on land or ice
+        with marine animals living in cold northern waters, and think about why
+        each animal is suited to its environment.
+      </p>
+      <p>
+        That makes the finished diorama useful not only as a craft, but also as
+        a visual aid for science lessons, classroom presentations and animal
+        habitat studies.
+      </p>
+    </div>
+  </section>
+
+  <section class="etsy-cta">
+    <div class="container etsy-inner">
+      <div class="section-label">Want to Make This Project?</div>
+      <h2>Build your own Arctic Habitat.</h2>
+      <p>
+        The printable Arctic Shoebox Diorama includes both A4 and US Letter PDF
+        files, ready to print, cut and turn into a North Pole habitat at home or school.
+      </p>
+
+      <a class="button" href="https://www.etsy.com/listing/4418136247/polar-shoebox-diorama-create-your-arctic" target="_blank" rel="noopener">
+        View the Arctic Habitat on Etsy
+      </a>
+
+      <div class="note">
+        Digital download only. Shoebox and craft materials are not included.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div><strong>Miniature Paper Worlds</strong><br>Printable dioramas & creative paper projects</div>
+    <div>© 2026 Miniature Paper Worlds</div>
+  </div>
+</footer>
+
+</body>
+</html>
