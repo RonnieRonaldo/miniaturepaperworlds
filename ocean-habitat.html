@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ocean Habitat Shoebox Diorama for Kids | Printable Marine Life Project</title>
+  <meta name="description" content="Build an ocean habitat inside a shoebox with this printable 15-page paper craft project for kids. Explore marine life, sea animals and ocean ecosystems at home, school or homeschool.">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, Helvetica, sans-serif; color: #26352b; background: #faf9f5; line-height: 1.7; }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    .container { width: min(1120px, 90%); margin: 0 auto; }
+
+    header { background: #faf9f5; border-bottom: 1px solid #e3e0d7; }
+    nav { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .logo { font-family: Georgia, "Times New Roman", serif; font-size: 1.45rem; font-weight: bold; text-decoration: none; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { text-decoration: none; font-size: .95rem; }
+    .nav-links a:hover { text-decoration: underline; }
+
+    .breadcrumb { padding: 25px 0 0; font-size: .84rem; color: #74806e; }
+    .breadcrumb a { text-decoration: none; }
+
+    section { padding: 90px 0; }
+    .product-hero { padding: 55px 0 90px; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 70px; align-items: center; }
+    .hero-image img { width: 100%; display: block; border-radius: 3px; }
+
+    .eyebrow, .section-label {
+      text-transform: uppercase; letter-spacing: .18em; font-size: .75rem;
+      font-weight: bold; color: #687a60; margin-bottom: 17px;
+    }
+
+    h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: normal; }
+    h1 { font-size: clamp(2.8rem, 5vw, 4.8rem); line-height: 1.04; margin-bottom: 25px; }
+    h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1.15; margin-bottom: 24px; }
+    h3 { font-size: 1.6rem; margin-bottom: 12px; }
+
+    .lead { font-size: 1.1rem; color: #566158; margin-bottom: 28px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 32px; }
+    .tags span { background: #edf0e8; padding: 7px 11px; font-size: .78rem; }
+
+    .button {
+      display: inline-block; padding: 14px 24px; background: #304b35; color: white;
+      text-decoration: none; border-radius: 3px; font-weight: bold; font-size: .92rem;
+    }
+    .button:hover { background: #203725; }
+
+    .story { background: #f1eee4; }
+    .story-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; }
+    .story-text p { margin-bottom: 18px; color: #4f5a52; }
+    .uses { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .uses span { background: white; padding: 8px 12px; font-size: .82rem; }
+
+    .views-heading, .process-heading, .details-heading { max-width: 720px; margin-bottom: 45px; }
+    .views-heading p, .process-heading p, .details-heading p { color: #586259; }
+
+    .two-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+    .three-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+    .image-card { background: white; border: 1px solid #e2e1da; overflow: hidden; }
+    .image-card img { width: 100%; height: 280px; object-fit: cover; display: block; }
+    .image-card-content { padding: 22px; }
+    .image-card-content p { color: #586259; font-size: .92rem; }
+
+    .process { background: #edf0e8; }
+    .process-card { background: white; overflow: hidden; }
+    .process-card img { width: 100%; height: 240px; object-fit: cover; display: block; }
+    .process-content { padding: 25px; }
+    .process-number { font-size: .72rem; font-weight: bold; letter-spacing: .15em; color: #75816f; margin-bottom: 8px; }
+    .process-content p { color: #586259; font-size: .93rem; }
+
+    .details-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .details-gallery img { width: 100%; height: 300px; object-fit: cover; display: block; }
+
+    .guide { background: #f1eee4; }
+    .guide-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+    .guide-image img { display: block; width: 100%; max-height: 520px; object-fit: contain; background: white; padding: 15px; }
+    .guide-text p { color: #4f5a52; margin-bottom: 18px; }
+    .guide-highlight { margin-top: 28px; padding: 22px; background: #faf9f5; border-left: 4px solid #526d50; }
+
+    .video-section { text-align: center; }
+    .video-intro { max-width: 680px; margin: 0 auto 40px; }
+    .video-intro p { color: #586259; }
+    .video-wrapper { width: min(420px, 100%); margin: 0 auto; aspect-ratio: 9 / 16; background: #111; }
+    .video-wrapper iframe { width: 100%; height: 100%; border: 0; }
+
+    .included { background: #edf0e8; }
+    .included-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+    .included-list { list-style: none; }
+    .included-list li { padding: 13px 0; border-bottom: 1px solid #d8d4c8; }
+    .included-list li::before { content: "✓"; margin-right: 12px; font-weight: bold; color: #496348; }
+    .need-box { background: white; padding: 40px; }
+    .need-box ul { margin: 20px 0 0 20px; }
+    .need-box li { margin-bottom: 9px; }
+
+    .learning { text-align: center; }
+    .learning-inner { max-width: 790px; margin: 0 auto; }
+    .learning p { color: #586259; margin-bottom: 18px; }
+
+    .etsy-cta { background: #2e4633; color: white; text-align: center; }
+    .etsy-inner { max-width: 720px; margin: 0 auto; }
+    .etsy-cta .section-label { color: #cbd4c6; }
+    .etsy-cta p { color: #dce2da; margin-bottom: 30px; }
+    .etsy-cta .button { background: #f5f1e5; color: #26352b; }
+    .note { margin-top: 18px; font-size: .82rem; color: #bfc9bd; }
+
+    footer { padding: 50px 0; background: #213226; color: #cfd7cf; font-size: .88rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
+
+    @media (max-width: 760px) {
+      nav { padding: 22px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { gap: 15px; flex-wrap: wrap; }
+      .hero-grid, .story-grid, .guide-grid, .included-grid { grid-template-columns: 1fr; gap: 40px; }
+      .two-grid, .three-grid, .details-gallery { grid-template-columns: 1fr; }
+      .image-card img, .process-card img, .details-gallery img { height: auto; max-height: 380px; object-fit: contain; }
+      section { padding: 65px 0; }
+      .product-hero { padding: 40px 0 65px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo">Miniature Paper Worlds</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#dioramas">Shoebox Dioramas</a></li>
+        <li><a href="index.html#journal">Design Journal</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="container breadcrumb">
+    <a href="index.html">Home</a> &nbsp;›&nbsp; Shoebox Dioramas &nbsp;›&nbsp; Ocean Habitat
+  </div>
+
+  <section class="product-hero">
+    <div class="container hero-grid">
+      <div class="hero-image">
+        <img src="Ocean-habitat-shoebox-diorama-1.jpg" alt="Completed printable Ocean Habitat shoebox diorama for kids with underwater scenery, coral and sea animals">
+      </div>
+
+      <div>
+        <div class="eyebrow">Printable Ocean Project for Kids</div>
+        <h1>Build an Ocean Habitat Inside a Shoebox</h1>
+        <p class="lead">
+          Turn an ordinary shoebox into a colorful underwater world filled with
+          fish, coral and ocean scenery. This printable paper project gives kids
+          a fun way to explore marine life, sea habitats and ocean ecosystems.
+        </p>
+
+        <div class="tags">
+          <span>15 Full-Color Pages</span>
+          <span>Ocean Habitat</span>
+          <span>Marine Life Project</span>
+          <span>Printable PDF</span>
+        </div>
+
+        <a class="button" href="https://www.etsy.com/listing/1503934969/printable-diorama-cut-paste-shoebox" target="_blank" rel="noopener">
+          View the Printable Kit on Etsy
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="container story-grid">
+      <div>
+        <div class="section-label">Ideas for Kids</div>
+        <h2>Explore life beneath the surface.</h2>
+      </div>
+
+      <div class="story-text">
+        <p>
+          The ocean is a great habitat for a shoebox project because it lets kids
+          build a world that looks completely different from anything on land.
+          Fish, coral and underwater scenery create a miniature environment with
+          its own sense of depth and movement.
+        </p>
+        <p>
+          The finished diorama can be used for a school science project, a marine
+          life lesson, a homeschool activity, a classroom display or simply a
+          creative afternoon at home.
+        </p>
+        <p>
+          While cutting and arranging the pieces, children can think about where
+          sea animals live, how coral provides shelter, and how different forms of
+          marine life share the same habitat.
+        </p>
+        <p>
+          When the shoebox is finished, it can also become a storytelling scene,
+          photography backdrop or miniature set for a simple stop-motion movie.
+        </p>
+
+        <div class="uses">
+          <span>School Science</span><span>Marine Life</span><span>Homeschool</span>
+          <span>Ocean Habitat</span><span>Storytelling</span><span>Stop Motion</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="views-heading">
+        <div class="section-label">Explore the Diorama</div>
+        <h2>See the underwater scene from both sides.</h2>
+        <p>
+          Different viewpoints show how the paper layers create depth inside the
+          box and help the fish and coral feel like part of one underwater world.
+        </p>
+      </div>
+
+      <div class="two-grid">
+        <article class="image-card">
+          <img src="Ocean-habitat-shoebox-diorama-2.jpg" alt="Right side view of a printable Ocean Habitat shoebox diorama for kids">
+          <div class="image-card-content">
+            <h3>Right View</h3>
+            <p>A closer look at the layered sea life, coral and underwater scenery.</p>
+          </div>
+        </article>
+
+        <article class="image-card">
+          <img src="Ocean-habitat-shoebox-diorama-3.jpg" alt="Left side view of a printable Ocean Habitat shoebox diorama with fish and coral">
+          <div class="image-card-content">
+            <h3>Left View</h3>
+            <p>See how the different paper elements work together to build depth.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="container">
+      <div class="process-heading">
+        <div class="section-label">How It Works</div>
+        <h2>Print. Cut. Create.</h2>
+        <p>
+          Start with printed pages, cut out the marine animals and coral,
+          and gradually build your own underwater habitat inside a shoebox.
+        </p>
+      </div>
+
+      <div class="three-grid">
+        <article class="process-card">
+          <img src="Ocean-habitat-shoebox-diorama-8.jpg" alt="Printed Ocean Habitat PDF pages on a table with some paper pieces already cut out">
+          <div class="process-content">
+            <div class="process-number">STEP 01</div><h3>Print</h3>
+            <p>Print the 15 full-color pages with ocean backgrounds, fish, coral and scenery.</p>
+          </div>
+        </article>
+
+        <article class="process-card">
+          <img src="Ocean-habitat-shoebox-diorama-7.jpg" alt="Printable coral cutout page from an Ocean Habitat shoebox diorama project">
+          <div class="process-content">
+            <div class="process-number">STEP 02</div><h3>Cut</h3>
+            <p>Cut out the coral, fish and other illustrated elements ready for assembly.</p>
+          </div>
+        </article>
+
+        <article class="process-card">
+          <img src="Ocean-habitat-shoebox-diorama-1.jpg" alt="Finished Ocean Habitat shoebox diorama showing the completed printable paper project">
+          <div class="process-content">
+            <div class="process-number">STEP 03</div><h3>Create</h3>
+            <p>Arrange the pieces in layers and turn the box into a miniature underwater world.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="details-heading">
+        <div class="section-label">From Printable Pages to Ocean Scene</div>
+        <h2>See some of the pieces before they become part of the diorama.</h2>
+        <p>
+          These preview images show how the project starts as flat printable
+          artwork before the pieces are cut out and built into the shoebox.
+        </p>
+      </div>
+
+      <div class="details-gallery">
+        <img src="Ocean-habitat-shoebox-diorama-4.jpg" alt="Example printable Ocean Habitat PDF page for a children's shoebox project">
+        <img src="Ocean-habitat-shoebox-diorama-5.jpg" alt="Printable Ocean Habitat PDF page with colorful fish illustrations">
+        <img src="Ocean-habitat-shoebox-diorama-6.jpg" alt="Printable ocean fish page from a children's shoebox diorama kit">
+      </div>
+    </div>
+  </section>
+
+  <section class="guide">
+    <div class="container guide-grid">
+      <div class="guide-image">
+        <img src="Ocean-habitat-shoebox-diorama-7.jpg" alt="Ocean Habitat printable coral cutout page showing pieces ready to cut and arrange">
+      </div>
+
+      <div class="guide-text">
+        <div class="section-label">Easy to Follow</div>
+        <h2>Build the underwater world piece by piece.</h2>
+        <p>
+          The project is designed to be visually easy to follow. Kids can see
+          the individual fish, coral and scenery pieces before cutting them out
+          and deciding how they fit into the shoebox.
+        </p>
+        <p>
+          The simple print-cut-create process makes the activity suitable for
+          home, school or homeschool without requiring complicated craft materials.
+        </p>
+
+        <div class="guide-highlight">
+          <strong>Start simple, then make it your own.</strong><br>
+          Add your own drawings, extra sea plants or handmade details if you want
+          to expand the underwater habitat beyond the printable pieces.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="container">
+      <div class="video-intro">
+        <div class="section-label">Watch the Project</div>
+        <h2>Take a closer look inside the Ocean Habitat.</h2>
+        <p>See how the printable fish, coral and underwater scenery come together inside the finished shoebox.</p>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/vnViCWDD3yU"
+          title="Ocean Habitat Printable Shoebox Diorama for Kids"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="included">
+    <div class="container included-grid">
+      <div>
+        <div class="section-label">The Printable Project</div>
+        <h2>What's included?</h2>
+        <ul class="included-list">
+          <li>15 full-color printable pages</li>
+          <li>Ocean and sea habitat backgrounds</li>
+          <li>Fish and marine animal cut-outs</li>
+          <li>Coral and underwater scenery</li>
+          <li>Layered pieces for creating a 3D ocean habitat</li>
+          <li>Digital PDF download</li>
+          <li>Designed for US Letter size paper</li>
+        </ul>
+      </div>
+
+      <div class="need-box">
+        <div class="section-label">Before You Start</div>
+        <h3>What do you need?</h3>
+        <ul>
+          <li>One empty shoebox</li>
+          <li>A printer</li>
+          <li>Scissors</li>
+          <li>Glue and/or tape</li>
+        </ul>
+
+        <p style="margin-top:25px; color:#586259;">
+          The shoebox is not included. The design works best with a typical
+          shoebox that originally held approximately US shoe sizes 8.5–10
+          (UK 6–7.5). Small differences in box size can easily be adjusted with
+          extra paper, a pencil or marker.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="learning">
+    <div class="container learning-inner">
+      <div class="section-label">Explore the Ocean</div>
+      <h2>What lives beneath the surface?</h2>
+      <p>
+        Ocean habitats are full of different forms of life, from fish and coral
+        to smaller creatures that depend on the underwater environment around them.
+      </p>
+      <p>
+        While building the diorama, kids can think about where different animals
+        might live, why coral reefs provide shelter, and how sea life depends on
+        water, food and safe places to hide.
+      </p>
+      <p>
+        The completed model can support a science lesson, marine life presentation,
+        homeschool activity or classroom project while still being a fun creative build.
+      </p>
+    </div>
+  </section>
+
+  <section class="etsy-cta">
+    <div class="container etsy-inner">
+      <div class="section-label">Want to Make This Project?</div>
+      <h2>Build your own Ocean Habitat.</h2>
+      <p>
+        If you need an ocean, marine life or sea habitat project for a child,
+        the complete 15-page printable Ocean Shoebox Diorama is available as
+        a digital download from my Etsy shop.
+      </p>
+
+      <a class="button" href="https://www.etsy.com/listing/1503934969/printable-diorama-cut-paste-shoebox" target="_blank" rel="noopener">
+        View the Ocean Habitat on Etsy
+      </a>
+
+      <div class="note">Digital download only. Shoebox and craft materials are not included.</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div><strong>Miniature Paper Worlds</strong><br>Printable dioramas & creative paper projects</div>
+    <div>© 2026 Miniature Paper Worlds</div>
+  </div>
+</footer>
+
+</body>
+</html>
