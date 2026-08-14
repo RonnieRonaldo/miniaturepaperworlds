@@ -357,6 +357,48 @@
       margin-bottom: 18px;
     }
 
+    .more-habitats {
+      background: #edf0e8;
+      text-align: center;
+    }
+
+    .more-habitats-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .habitat-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 38px;
+    }
+
+    .habitat-link {
+      display: block;
+      background: white;
+      padding: 26px 18px;
+      text-decoration: none;
+      border: 1px solid #dde1d8;
+    }
+
+    .habitat-link strong {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin-bottom: 6px;
+    }
+
+    .habitat-link span {
+      color: #667068;
+      font-size: .86rem;
+    }
+
+    .habitat-link:hover {
+      border-color: #7d8e79;
+    }
+
     .etsy-cta {
       background: #2e4633;
       color: white;
@@ -422,7 +464,8 @@
         gap: 40px;
       }
 
-      .process-grid {
+      .process-grid,
+      .habitat-links {
         grid-template-columns: 1fr;
       }
 
@@ -790,6 +833,36 @@
         ideas and make the little world their own.
       </p>
 
+    </div>
+  </section>
+
+
+  <section class="more-habitats">
+    <div class="container more-habitats-inner">
+      <div class="section-label">Explore More Habitats</div>
+      <h2>Continue exploring the Nature Collection.</h2>
+      <p>
+        Every habitat has its own animals, scenery and environment.
+        Explore another printable shoebox project and discover how different
+        miniature ecosystems can be built from paper.
+      </p>
+
+      <div class="habitat-links">
+        <a class="habitat-link" href="rainforest-habitat.html">
+          <strong>Explore the Rainforest Habitat</strong>
+          <span>Tropical plants, wildlife and biodiversity</span>
+        </a>
+
+        <a class="habitat-link" href="savanna-habitat.html">
+          <strong>Explore the Savanna Habitat</strong>
+          <span>Grasslands, wildlife and open landscapes</span>
+        </a>
+
+        <a class="habitat-link" href="arctic-habitat.html">
+          <strong>Explore the Arctic Habitat</strong>
+          <span>Snow, ice and animals of the far north</span>
+        </a>
+      </div>
     </div>
   </section>
 
