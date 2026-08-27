@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://miniaturepaperworlds.com/</loc></url>
-<url><loc>https://miniaturepaperworlds.com/forest-habitat.html</loc></url>
-<url><loc>https://miniaturepaperworlds.com/rainforest-habitat.html</loc></url>
-<url><loc>https://miniaturepaperworlds.com/savanna-habitat.html</loc></url>
-<url><loc>https://miniaturepaperworlds.com/desert-habitat.html</loc></url>
-<url><loc>https://miniaturepaperworlds.com/ocean-habitat.html</loc></url>
-<url><loc>https://miniaturepaperworlds.com/arctic-habitat.html</loc></url>
+  <url><loc>https://miniaturepaperworlds.com/</loc></url>
+  <url><loc>https://miniaturepaperworlds.com/forest-habitat.html</loc></url>
+  <url><loc>https://miniaturepaperworlds.com/rainforest-habitat.html</loc></url>
+  <url><loc>https://miniaturepaperworlds.com/savanna-habitat.html</loc></url>
+  <url><loc>https://miniaturepaperworlds.com/desert-habitat.html</loc></url>
+  <url><loc>https://miniaturepaperworlds.com/ocean-habitat.html</loc></url>
+  <url><loc>https://miniaturepaperworlds.com/arctic-habitat.html</loc></url>
+  <url><loc>https://miniaturepaperworlds.com/horse-stable-paddock.html</loc></url>
+  <url><loc>https://miniaturepaperworlds.com/international-shop.html</loc></url>
 </urlset>
