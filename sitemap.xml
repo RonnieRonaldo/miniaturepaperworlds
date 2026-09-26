@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://miniaturepaperworlds.com/</loc></url>
-  <url><loc>https://miniaturepaperworlds.com/forest-habitat.html</loc></url>
+  <url><loc>https://miniaturepaperworlds.com/</loc><lastmod>2026-09-26</lastmod></url>
+  <url><loc>https://miniaturepaperworlds.com/forest-habitat.html</loc><lastmod>2026-09-26</lastmod></url>
   <url><loc>https://miniaturepaperworlds.com/rainforest-habitat.html</loc></url>
   <url><loc>https://miniaturepaperworlds.com/savanna-habitat.html</loc></url>
   <url><loc>https://miniaturepaperworlds.com/desert-habitat.html</loc></url>
-  <url><loc>https://miniaturepaperworlds.com/ocean-habitat.html</loc></url>
+  <url><loc>https://miniaturepaperworlds.com/ocean-habitat.html</loc><lastmod>2026-09-26</lastmod></url>
   <url><loc>https://miniaturepaperworlds.com/arctic-habitat.html</loc></url>
   <url><loc>https://miniaturepaperworlds.com/horse-stable-paddock.html</loc></url>
   <url><loc>https://miniaturepaperworlds.com/international-shop.html</loc></url>
@@ -13,4 +13,5 @@
 <url><loc>https://miniaturepaperworlds.com/about.html</loc></url>
 <url><loc>https://miniaturepaperworlds.com/contact.html</loc></url>
 <url><loc>https://miniaturepaperworlds.com/privacy.html</loc></url>
+<url><loc>https://miniaturepaperworlds.com/volcano-diorama.html</loc><lastmod>2026-09-26</lastmod></url>
 </urlset>

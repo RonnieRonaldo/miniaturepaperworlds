@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Google tag (gtag.js) -->
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Printable Volcano Diorama | 3D Paper Volcano Model</title>
+
+  <meta name="description" content="Build a printable 3D volcano diorama with four paper scenes, a labelled cross section and educational cards. Explore the model, video and printable kit.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #26352b;
+      background: #faf9f5;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: #faf9f5;
+      border-bottom: 1px solid #e3e0d7;
+    }
+
+    nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.45rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: .95rem;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .breadcrumb {
+      padding: 25px 0 0;
+      font-size: .84rem;
+      color: #74806e;
+    }
+
+    .breadcrumb a {
+      text-decoration: none;
+    }
+
+    .product-hero {
+      padding: 55px 0 90px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      display: block;
+      border-radius: 3px;
+    }
+
+    .eyebrow,
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-size: .75rem;
+      font-weight: bold;
+      color: #687a60;
+      margin-bottom: 17px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: normal;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 5vw, 4.8rem);
+      line-height: 1.04;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+
+    .lead {
+      font-size: 1.1rem;
+      color: #566158;
+      margin-bottom: 28px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 32px;
+    }
+
+    .tags span {
+      background: #edf0e8;
+      padding: 7px 11px;
+      font-size: .78rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      background: #304b35;
+      color: white;
+      text-decoration: none;
+      border-radius: 3px;
+      font-weight: bold;
+      font-size: .92rem;
+    }
+
+    .button:hover {
+      background: #203725;
+    }
+
+    section {
+      padding: 90px 0;
+    }
+
+    .story {
+      background: #f1eee4;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 80px;
+    }
+
+    .story-text p {
+      margin-bottom: 18px;
+      color: #4f5a52;
+    }
+
+    .uses {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .uses span {
+      background: white;
+      padding: 8px 12px;
+      font-size: .82rem;
+    }
+
+    .process-heading {
+      max-width: 700px;
+      margin-bottom: 50px;
+    }
+
+    .process-heading p {
+      color: #586259;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .process-card {
+      background: white;
+      border: 1px solid #e2e1da;
+      overflow: hidden;
+    }
+
+    .process-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .process-content {
+      padding: 25px;
+    }
+
+    .process-number {
+      font-size: .72rem;
+      font-weight: bold;
+      letter-spacing: .15em;
+      color: #75816f;
+      margin-bottom: 8px;
+    }
+
+    .process-content p {
+      color: #586259;
+      font-size: .93rem;
+    }
+
+    .guide {
+      background: #edf0e8;
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .guide-image img {
+      display: block;
+      width: 100%;
+      max-height: 520px;
+      object-fit: contain;
+      background: white;
+      padding: 15px;
+    }
+
+    .guide-text p {
+      color: #4f5a52;
+      margin-bottom: 18px;
+    }
+
+    .guide-highlight {
+      margin-top: 28px;
+      padding: 22px;
+      background: #faf9f5;
+      border-left: 4px solid #526d50;
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+      margin-top: 42px;
+    }
+
+    .detail-card {
+      background: white;
+      border: 1px solid #e2e1da;
+      overflow: hidden;
+    }
+
+    .detail-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .detail-card .process-content {
+      min-height: 180px;
+    }
+
+    .video-section {
+      text-align: center;
+    }
+
+    .video-intro {
+      max-width: 680px;
+      margin: 0 auto 40px;
+    }
+
+    .video-intro p {
+      color: #586259;
+    }
+
+    .video-wrapper-landscape {
+      width: min(900px, 100%);
+      margin: 0 auto;
+      aspect-ratio: 16 / 9;
+      background: #111;
+    }
+
+    .video-wrapper-landscape iframe,
+    .video-wrapper-short iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-wrapper-short {
+      width: min(420px, 100%);
+      margin: 45px auto 0;
+      aspect-ratio: 9 / 16;
+      background: #111;
+    }
+
+    .included {
+      background: #f1eee4;
+    }
+
+    .included-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    }
+
+    .included-list {
+      list-style: none;
+    }
+
+    .included-list li {
+      padding: 13px 0;
+      border-bottom: 1px solid #d8d4c8;
+    }
+
+    .included-list li::before {
+      content: "✓";
+      margin-right: 12px;
+      font-weight: bold;
+      color: #496348;
+    }
+
+    .need-box {
+      background: white;
+      padding: 40px;
+    }
+
+    .need-box ul {
+      margin: 20px 0 0 20px;
+    }
+
+    .need-box li {
+      margin-bottom: 9px;
+    }
+
+    .learning {
+      text-align: center;
+    }
+
+    .learning-inner {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .learning p {
+      color: #586259;
+      margin-bottom: 18px;
+    }
+
+    .gallery {
+      background: #faf9f5;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 38px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+    }
+
+    .more-habitats {
+      background: #edf0e8;
+      text-align: center;
+    }
+
+    .more-habitats-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .habitat-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 38px;
+    }
+
+    .habitat-link {
+      display: block;
+      background: white;
+      padding: 26px 18px;
+      text-decoration: none;
+      border: 1px solid #dde1d8;
+    }
+
+    .habitat-link strong {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin-bottom: 6px;
+    }
+
+    .habitat-link span {
+      color: #667068;
+      font-size: .86rem;
+    }
+
+    .habitat-link:hover {
+      border-color: #7d8e79;
+    }
+
+    .etsy-cta {
+      background: #2e4633;
+      color: white;
+      text-align: center;
+    }
+
+    .etsy-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .etsy-cta .section-label {
+      color: #cbd4c6;
+    }
+
+    .etsy-cta p {
+      color: #dce2da;
+      margin-bottom: 30px;
+    }
+
+    .etsy-cta .button {
+      background: #f5f1e5;
+      color: #26352b;
+    }
+
+    .note {
+      margin-top: 18px;
+      font-size: .82rem;
+      color: #bfc9bd;
+    }
+
+    footer {
+      padding: 50px 0;
+      background: #213226;
+      color: #cfd7cf;
+      font-size: .88rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        padding: 22px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .hero-grid,
+      .story-grid,
+      .guide-grid,
+      .included-grid,
+      .detail-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .process-grid,
+      .habitat-links,
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-card img {
+        height: auto;
+        max-height: 350px;
+        object-fit: contain;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .product-hero {
+        padding: 40px 0 65px;
+      }
+    }
+  </style>
+  <link rel="icon" href="/favicon.ico?v=1" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=1">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/analytics-consent.css">
+<script defer src="/analytics-consent.js"></script>
+<link rel="canonical" href="https://miniaturepaperworlds.com/volcano-diorama.html">
+<link rel="alternate" hreflang="en" href="https://miniaturepaperworlds.com/volcano-diorama.html">
+<meta property="og:title" content="Printable Volcano Diorama | Miniature Paper Worlds">
+<meta property="og:description" content="One paper volcano, four scenes to explore. Build a labelled 3D model for school, homeschool or creative afternoons.">
+<meta property="og:image" content="https://miniaturepaperworlds.com/images/3d-volcano-model-with-labels-school-project.jpg">
+<meta property="og:url" content="https://miniaturepaperworlds.com/volcano-diorama.html">
+<meta property="og:type" content="website">
+<style>.detail-card img,.gallery-grid img,.process-card img{object-fit:contain;background:#fff}.gallery-grid figure{margin:0}.gallery-grid figcaption{font-size:.9rem;padding:12px 0}.volcano-faq details{padding:20px 0;border-bottom:1px solid #d8d4c8}.volcano-faq summary{font-weight:bold;cursor:pointer}.volcano-faq p{margin-top:12px}a:focus-visible,summary:focus-visible{outline:3px solid #9a5721;outline-offset:4px}.presentation-list{padding-left:24px}.presentation-list li{margin:14px 0}.video-wrapper-short iframe{display:block}</style></head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo">Miniature Paper Worlds</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html#dioramas">Dioramas &amp; Paper Models</a></li>
+        <li><a href="index.html#journal">Design Journal</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main><div class="container breadcrumb"><a href="index.html">Home</a> &nbsp;›&nbsp; Volcano Diorama</div>
+<section class="product-hero"><div class="container hero-grid"><div class="hero-image"><img src="images/3d-volcano-model-with-labels-school-project.jpg" alt="3D paper volcano model with numbered cross section, English parts key and an Inside the Volcano information card" width="1600" height="1600" fetchpriority="high"></div><div><div class="eyebrow">Printable Earth Science Papercraft</div><h1>One paper volcano. Four scenes to explore.</h1><p class="lead">Build a 3D volcano diorama that reveals what happens inside a volcano and how volcanic activity changes the world around it. Print, cut, fold and bring the illustrated scenes together.</p><div class="tags"><span>Four Scenes</span><span>Labelled Cross Section</span><span>English Instructions</span><span>Printable PDF</span></div><a class="button" href="https://3dshoeboxdiorama.etsy.com/listing/4473019783/printable-volcano-diorama-4-part-volcano" target="_blank" rel="noopener">View the Printable Kit on Etsy</a><p style="margin-top:16px;font-size:.9rem">Digital download · Print and assemble yourself · No physical model shipped</p></div></div></section>
+<section class="story"><div class="container story-grid"><div><div class="section-label">A Small World of Discovery</div><h2>Build something you can explain.</h2></div><div class="story-text"><p>Turn flat printed artwork into a miniature landscape with a story on every side. A numbered cross section opens up the volcano, while the other scenes explore new land, volcanic soil and eruption hazards.</p><p>Use it for a school science display, a homeschool earth science topic or a creative afternoon with paper. The English labels and information cards give children a starting point for explaining their model in their own words.</p><p>This is a freestanding paper display; no shoebox is needed. It illustrates general volcanic processes, rather than reproducing one specific volcano.</p></div></div></section>
+<section><div class="container"><div class="process-heading"><div class="section-label">The Four Scenes</div><h2>From the inside out.</h2></div><div class="detail-grid"><article class="detail-card"><img src="images/3d-volcano-model-with-labels-school-project.jpg" alt="3D paper volcano model with numbered cross section, English parts key and an Inside the Volcano information card" width="1600" height="1600" loading="lazy" decoding="async"><div class="process-content"><h3>Inside the Volcano</h3><p>Follow the numbered key to identify magma, the main vent, throat, crater, lava flow and layers of ash.</p></div></article><article class="detail-card"><img src="images/volcano-model-lava-creates-new-land.jpg" alt="Paper volcano scene with an island, palm trees and an information card explaining how lava creates new land" width="1600" height="1600" loading="lazy" decoding="async"><div class="process-content"><h3>New Land from Lava</h3><p>An island scene and palm tree bring the idea of new land into view. Discuss how lava cools and becomes solid rock.</p></div></article><article class="detail-card"><img src="images/volcano-model-fertile-soil-and-plants.jpg" alt="Paper volcano model with plants and an information card explaining rich volcanic soil" width="1600" height="1600" loading="lazy" decoding="async"><div class="process-content"><h3>Volcanic Soil</h3><p>The plants and trees introduce a conversation about how weathered volcanic material can contribute minerals to soil over time.</p></div></article><article class="detail-card"><img src="images/volcano-model-eruption-hazards-display.jpg" alt="Volcano eruption hazards diorama with illustrated houses, lava, fire and an English information card" width="1600" height="1600" loading="lazy" decoding="async"><div class="process-content"><h3>Eruption Hazards</h3><p>Illustrated homes and lava help children discuss how eruptions can affect the surrounding landscape and communities.</p></div></article></div></div></section><section class="guide"><div class="container guide-grid"><div class="guide-image"><img src="images/volcano-diorama-four-paper-scenes.jpg" alt="Four folded paper volcano scenes showing a cross section, island formation, volcanic soil and eruption hazards" width="1600" height="1600" loading="lazy" decoding="async"></div><div class="guide-text"><div class="section-label">Behind the Design</div><h2>Four viewpoints in one display.</h2><p>The model combines a cutaway diagram with illustrated landscape scenes. Turn it around to move from the volcano’s interior to its effects on the environment.</p><p>Raised paper pieces and separate information cards add depth while keeping the explanations visible. The artwork provides the setting; cutting, folding and assembling bring it into three dimensions.</p></div></div></section>
+<section><div class="container"><div class="process-heading"><div class="section-label">How to Make Your Volcano Model</div><h2>Print. Fold. Bring it together.</h2><p>Prepare a printer, paper, scissors and glue. Read the PDF instructions before starting; younger children may need help with cutting and assembly.</p></div><div class="process-grid"><article class="process-card"><img src="images/volcano-school-project-printable-templates.jpg" alt="Four printed volcano model templates with scenery, folding instructions and educational cards on a wooden table" width="1600" height="1600" loading="lazy" decoding="async"><div class="process-content"><h3>1. Print and Cut</h3><p>Print the illustrated templates and cut out the scenes, cards and separate pieces along the indicated lines.</p></div></article><article class="process-card"><img src="images/paper-volcano-model-folding-steps.jpg" alt="Four photos showing a paper volcano template being folded into a standing triangular scene" width="1600" height="1600" loading="lazy" decoding="async"><div class="process-content"><h3>2. Fold the Sections</h3><p>Follow the folding instructions to give each flat scene its three-dimensional shape.</p></div></article><article class="process-card"><img src="images/volcano-model-assembly-steps.jpg" alt="Assembly photos showing the folded volcano scenes being joined back to back and trimmed" width="1600" height="1600" loading="lazy" decoding="async"><div class="process-content"><h3>3. Assemble and Explain</h3><p>Glue the sections together and add the paper details and information cards. Practise describing each scene.</p></div></article></div></div></section><section class="video-section"><div class="container"><div class="video-intro"><div class="section-label">See the Finished Model</div><h2>Take a turn around the volcano.</h2><p>Watch the complete model rotate so you can see all four scenes. This Short shows the finished display, rather than a step-by-step assembly tutorial.</p></div><div class="video-wrapper-short"><iframe src="https://www.youtube-nocookie.com/embed/XM9yG8aaPEY" title="Rotating 3D paper volcano diorama – Miniature Paper Worlds" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><p style="margin-top:24px"><a href="https://www.youtube.com/shorts/XM9yG8aaPEY" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></p></div></section>
+<section class="included"><div class="container included-grid"><div><div class="section-label">The Printable Kit</div><h2>What’s inside?</h2><ul class="included-list"><li>Illustrated templates for four volcano scenes</li><li>A numbered cross section and English parts key</li><li>Separate paper scenery and educational information cards</li><li>English instructions for building the model</li></ul></div><div class="need-box"><h3>You provide the craft supplies.</h3><p>A printer, paper, scissors and glue are needed. This is a digital PDF, so you can prepare the printed pieces at home.</p><p style="margin-top:20px">Check the Etsy listing for current price and download details.</p><a class="button" href="https://3dshoeboxdiorama.etsy.com/listing/4473019783/printable-volcano-diorama-4-part-volcano" target="_blank" rel="noopener">View the Printable Kit on Etsy</a></div></div></section><section class="gallery"><div class="container"><div class="section-label">A Closer Look at the Templates</div><h2>The scenes begin on paper.</h2><div class="gallery-grid"><figure><img src="images/volcano-cross-section-template-with-labels.jpg" alt="Printable volcano cross section template with six numbered parts and an English label key" width="1600" height="1600" loading="lazy" decoding="async"><figcaption>The numbered cross section and matching key.</figcaption></figure><figure><img src="images/volcano-island-formation-paper-template.jpg" alt="Printable island formation scene with a volcano, palm tree cut-out and a card about lava creating new land" width="1600" height="1600" loading="lazy" decoding="async"><figcaption>The island scene with cut-out scenery and information card.</figcaption></figure><figure><img src="images/volcanic-soil-paper-model-template.jpg" alt="Printable volcanic soil scene with trees, plant cut-outs and a soil information card" width="1600" height="1600" loading="lazy" decoding="async"><figcaption>The volcanic soil scene before folding.</figcaption></figure><figure><img src="images/volcano-eruption-hazards-paper-template.jpg" alt="Printable volcano hazards scene with houses, lava, a fire cut-out and an educational card" width="1600" height="1600" loading="lazy" decoding="async"><figcaption>The eruption hazards scene and its illustrated details.</figcaption></figure></div></div></section><section class="story"><div class="container story-grid"><div><div class="section-label">For School &amp; Homeschool</div><h2>Give your model a voice.</h2></div><div class="story-text"><p>Choose a scene, point to its details and explain one idea. These prompts can help children prepare a short presentation:</p><ul class="presentation-list"><li>“This cutaway shows parts inside a volcano. I can find the main vent and crater using the labels.”</li><li>“Molten rock below the surface is called magma. When it reaches the surface, it is called lava.”</li><li>“My island scene shows how cooled lava can form new land.”</li></ul><p>For an extra geography activity, choose a real volcano, find it on a map and compare a photograph with the model. Discuss which features are similar and which are different. Check the teacher’s requirements for a school assignment.</p></div></div></section>
+<section class="volcano-faq"><div class="container"><h2>Before you begin</h2><details><summary>Is this a physical model?</summary><p>No. The kit is a digital PDF to print, cut and assemble yourself. Craft supplies and a finished model are not shipped.</p></details><details><summary>Does the volcano erupt?</summary><p>No. This is an educational paper display, not a working eruption experiment.</p></details><details><summary>Do I need a shoebox?</summary><p>No. This volcano is a freestanding model made from folded paper sections.</p></details><details><summary>Is it a model of a particular volcano?</summary><p>It illustrates general volcano parts and processes. It is not an exact replica of a named volcano.</p></details><details><summary>What language are the labels?</summary><p>The labels, information cards and instructions are in English.</p></details></div></section>
+<section class="more-habitats"><div class="container more-habitats-inner"><div class="section-label">Keep Creating</div><h2>Explore more paper worlds.</h2><div class="habitat-links"><a class="habitat-link" href="forest-habitat.html"><strong>Forest Habitat</strong><span>Build a woodland world</span></a><a class="habitat-link" href="ocean-habitat.html"><strong>Ocean Habitat</strong><span>Explore an underwater scene</span></a><a class="habitat-link" href="horse-stable-paddock.html"><strong>Horse Stable &amp; Paddock</strong><span>Create a miniature ranch</span></a></div></div></section><section class="etsy-cta"><div class="container etsy-inner"><div class="section-label">Ready to Create?</div><h2>Build your own volcano diorama.</h2><p>Start with the printable templates and turn four paper scenes into a display you can explore from every side.</p><a class="button" href="https://3dshoeboxdiorama.etsy.com/listing/4473019783/printable-volcano-diorama-4-part-volcano" target="_blank" rel="noopener">View the Printable Kit on Etsy</a><p class="note">Digital PDF · English labels and instructions · Print and assemble yourself</p></div></section></main>
+
+
+<footer>
+  <div class="container footer-inner">
+
+    <div>
+      <strong>Miniature Paper Worlds</strong><br>
+      Printable dioramas &amp; creative paper projects
+    </div>
+
+    <div>
+      © 2026 Miniature Paper Worlds
+    </div>
+
+  </div>
+<div class="container" style="padding-top:22px;display:flex;gap:24px;flex-wrap:wrap"><a href="/faq.html">FAQ</a><a href="/about.html">About Me</a><a href="/contact.html">Contact</a></div><div class="analytics-footer"><a href="/privacy.html">Privacy &amp; analytics</a> · <button type="button" class="analytics-settings">Analytics settings</button></div></footer>
+
+</body>
+</html>
