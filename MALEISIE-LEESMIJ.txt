@@ -1,0 +1,49 @@
+MALEISIE — WATER CYCLE
+
+Plaats de inhoud van deze websitemap op dezelfde plek als de bestaande index.html.
+Behoud de map ms-my met alle submappen. Upload de website niet als een extra map
+miniaturepaperworlds-main binnen de bestaande website.
+
+Nieuwe pagina's:
+https://miniaturepaperworlds.com/ms-my/
+https://miniaturepaperworlds.com/ms-my/model-kitaran-air/
+https://miniaturepaperworlds.com/ms-my/cara-membuat-model-kitaran-air/
+https://miniaturepaperworlds.com/ms-my/bantuan/
+
+Product: Water Cycle, voorlopig Engelse PDF. Website en uitleg: Bahasa Melayu.
+Prijs: US$3.00. Paddle bepaalt het definitieve checkoutbedrag en eventuele belasting.
+Paddle price: pri_01m4kp8900nk32j0xavq7862w7
+Worker productcode: water-cycle-my
+Private R2-objectnaam: model-kitaran-air.pdf
+
+Voor de eerste verkoop:
+1. Controleer in Paddle of miniaturepaperworlds.com als website is goedgekeurd
+   voor live checkout. Een goedgekeurd India-domein keurt dit domein niet vanzelf goed.
+2. Open de productpagina na upload en controleer beide koopknoppen: product,
+   USD-prijs en checkout.
+3. Test een betaling en de volledige PDF-download. Deze live aankoop is nog niet
+   uitgevoerd. Bewaar het bestand en controleer of de juiste PDF wordt geleverd.
+4. Controleer mobiel de pagina's en test het contactformulier naar je eigen mailbox.
+5. Dien de bijgewerkte sitemap.xml in bij Google Search Console.
+
+Technische controles uitgevoerd: JavaScript-syntax, lokale links en afbeeldingen,
+sitemap XML, wederzijdse hreflang en gesimuleerde downloadscenario's (succes,
+vertraging, verkeerde productreferentie, ongeldige downloadhost en herstel).
+Een visuele browsertest en live betaaltest zijn nog niet uitgevoerd.
+
+Bestaande pagina's zijn behouden. Alleen taalverwijzingen toegevoegd aan home,
+Water Cycle, how-to en contact, en een Maleisie-link aan international-shop.
+Sitemap en llms.txt bijgewerkt. Drie lege WebP-bestanden hersteld uit hun origineel:
+paardenstaldeuren, Water Cycle-hoofdfoto en vulkaandoorsnede.
+
+Google Analytics gebruikt dezelfde bestaande property en toestemming als de
+Engelse site, met een Maleistalige toestemmingsmelding. Paddle wordt pas geladen
+na een klik op een koopknop.
+
+Later vertalen:
+Vervang de R2-PDF onder exact dezelfde objectnaam. Pas daarna ook de taalvermelding
+op de productpagina, how-to, startpagina, downloadknop en in Paddle aan. Het
+vervangen van de PDF alleen verandert de teksten op de website niet.
+
+Forest is nog niet toegevoegd aan het Maleisische gedeelte; daarvoor is nog geen
+Maleisische productprijs/downloadkoppeling ingesteld.
