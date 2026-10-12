@@ -52,7 +52,7 @@
           let url;try {url=new URL(data.download_url);}catch(_){fail('Pautan muat turun tidak dapat disahkan.');return;}
           if(url.origin!==c.worker || !url.pathname.startsWith('/download/')) {fail('Pautan muat turun tidak dapat disahkan.');return;}
           link.href=url.href;area.hidden=false;paid=true;
-          message('Pembayaran disahkan. PDF bahasa Inggeris anda sedia untuk dimuat turun.');
+          message('Pembayaran disahkan. PDF anda sedia untuk dimuat turun.');
           ['transaction_id','transactionId','_ptxn'].forEach(k=>page.searchParams.delete(k));
           try {history.replaceState({},'',page.pathname+page.search+page.hash);}catch(_){}
           area.scrollIntoView({behavior:'smooth',block:'center'});return;
